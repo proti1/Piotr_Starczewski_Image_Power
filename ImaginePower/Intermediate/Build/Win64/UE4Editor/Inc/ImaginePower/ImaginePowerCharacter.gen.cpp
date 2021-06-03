@@ -26,6 +26,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	IMAGINEPOWER_API UClass* Z_Construct_UClass_UPlayerInteractionInterface_NoRegister();
 // End Cross Module References
 	void AImaginePowerCharacter::StaticRegisterNativesAImaginePowerCharacter()
 	{
@@ -106,6 +107,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Mesh1P;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -297,6 +299,9 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_FP_Gun,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_Mesh1P,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AImaginePowerCharacter_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UPlayerInteractionInterface_NoRegister, (int32)VTABLE_OFFSET(AImaginePowerCharacter, IPlayerInteractionInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AImaginePowerCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AImaginePowerCharacter>::IsAbstract,
 	};
@@ -307,11 +312,11 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		DependentSingletons,
 		nullptr,
 		Z_Construct_UClass_AImaginePowerCharacter_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
 		UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::Class_MetaDataParams))
 	};
@@ -324,7 +329,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AImaginePowerCharacter, 3607175175);
+	IMPLEMENT_CLASS(AImaginePowerCharacter, 3104268802);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AImaginePowerCharacter>()
 	{
 		return AImaginePowerCharacter::StaticClass();

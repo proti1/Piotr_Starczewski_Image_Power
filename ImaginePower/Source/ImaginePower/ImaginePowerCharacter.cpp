@@ -165,7 +165,7 @@ void AImaginePowerCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AImaginePowerCharacter::LookUpAtRate);
 
 	PlayerInputComponent->BindAction("InteractButton", IE_Pressed, this, &AImaginePowerCharacter::InteractButton);
-	PlayerInputComponent->BindAction("SpecialButton", IE_Pressed, this, &AImaginePowerCharacter::InteractButton);
+	PlayerInputComponent->BindAction("SpecialButton", IE_Pressed, this, &AImaginePowerCharacter::SpecialButton);
 }
 
 void AImaginePowerCharacter::OnFire()
@@ -216,12 +216,6 @@ void AImaginePowerCharacter::OnFire()
 	}
 }
 
-void AImaginePowerCharacter::SpecialButton()
-{
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, TEXT("SpecialButton"));
-}
-
 void AImaginePowerCharacter::OnResetVR()
 {
 	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
@@ -251,6 +245,28 @@ void AImaginePowerCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const
 	}
 	TouchItem.bIsPressed = false;
 }
+
+
+void AImaginePowerCharacter::InteractButton()
+{
+	if (bInteractActorInRange/* && OtherActor != nullptr) && (OtherComp != nullptr))true*/)
+	{
+		IPlayerInteractionInterface::Execute_OnInteract(OutHit.GetActor());
+		//Linia do debugowania
+		DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
+
+		//Do debugowania, wypisz nazwę interaktowanego aktora
+		//if (bInteractActorInRange && GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("Aktor: %s"), *OutHit.GetActor()->GetName()));
+	}
+}
+
+void AImaginePowerCharacter::SpecialButton()
+{
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
+}
+
 
 //Commenting this section out to be consistent with FPS BP template.
 //This allows the user to turn without using the right virtual joystick
@@ -335,16 +351,6 @@ bool AImaginePowerCharacter::EnableTouchscreenMovement(class UInputComponent* Pl
 	return false;
 }
 
-void AImaginePowerCharacter::InteractButton()
-{\
-	//Linia do debugowania
-	DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, true, 2.0f, -1, 5.0f);
-
-	//Do debugowania, wypisz nazwę interaktowanego aktora
-	if (bInteractActorInRange && GEngine)
-	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("Aktor: %s"), *OutHit.GetActor()->GetName()));
-}
-
 //Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem 
 bool AImaginePowerCharacter::CalculateInteractRay()
 {
@@ -370,6 +376,6 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 		}
 	}
 
-	//Przy braku spełnienia któregoś z warunków zakończ funkcje fałszem
+	//Przy braku nien spełnienia któregoś z warunków zakończ funkcje fałszem
 	return (false);
 }

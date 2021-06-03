@@ -4,6 +4,8 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\PlayerInteractionInterface.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\PlayerInteractionInterface.generated.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePowerCharacter.generated.h
 c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ImaginePowerProjectile.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePowerProjectile.generated.h

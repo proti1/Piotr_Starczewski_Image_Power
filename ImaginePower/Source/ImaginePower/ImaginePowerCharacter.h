@@ -4,12 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
 #include "ImaginePowerCharacter.generated.h"
 
 class UInputComponent;
 
 UCLASS(config=Game)
-class AImaginePowerCharacter : public ACharacter
+class AImaginePowerCharacter : public ACharacter, public IPlayerInteractionInterface
 {
 	GENERATED_BODY()
 
@@ -162,8 +163,6 @@ public:
 	float MaxInteractLength;
 
 private:
-	//Wynik raycastu interakcji
-	FHitResult OutHit;
 
 	//Czy jest obiekt do interakcji w zasięgu
 	bool bInteractActorInRange;
@@ -176,6 +175,9 @@ private:
 
 	//Punkt na który skierowana jest kamera z uwzględnieniem maksymalnej odległości
 	FVector InteractionRayEnd;
+
+	//Wynik raycastu interakcji
+	FHitResult OutHit;
 
 	//Właściwości raycastu
 	FCollisionQueryParams CollisionParams;
