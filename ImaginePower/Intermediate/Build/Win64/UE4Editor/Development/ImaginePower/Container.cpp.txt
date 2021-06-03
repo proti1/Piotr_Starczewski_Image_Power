@@ -1,0 +1,3 @@
+C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h
+c:\users\proti\documents\unreal projects\imaginepower\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\items\Container.h
+C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\Container.generated.h
