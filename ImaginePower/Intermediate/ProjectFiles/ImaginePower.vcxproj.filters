@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ImaginePower.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DBA84171-159B-4CA5-BA5C-0E68667B57AF}</UniqueIdentifier>
+      <UniqueIdentifier>{2D14D4BD-8BAE-430C-B8AC-3037F444D939}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ImaginePower.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2026BC5E-6A7B-41A9-BF96-1F642BD3D0C1}</UniqueIdentifier>
+      <UniqueIdentifier>{6702E3D4-B515-4380-BA8E-50DDEE553F4C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ImaginePower">
-      <UniqueIdentifier>{FB7D77A8-EF0F-4F6F-B6A6-5E7EA1B858B9}</UniqueIdentifier>
+      <UniqueIdentifier>{FC8A1B9E-6394-4D98-A4E8-B0CD047A639F}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ImaginePower\Container.cpp">
       <Filter>Source\ImaginePower</Filter>
@@ -81,6 +81,12 @@
       <Filter>Source\ImaginePower</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ImaginePower\MinionInterface.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ImaginePower\PlayerInteractionInterface.cpp">
+      <Filter>Source\ImaginePower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ImaginePower\PlayerInteractionInterface.h">
       <Filter>Source\ImaginePower</Filter>
     </ClInclude>
   </ItemGroup>
