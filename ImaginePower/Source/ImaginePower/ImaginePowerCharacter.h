@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// Copyright Epic Games, Inc. All Rights Reserved.
 
 #pragma once
 
@@ -51,6 +51,12 @@ public:
 protected:
 	virtual void BeginPlay();
 
+	//Ewent tick, odgrywany w każdej klatce gry
+	virtual void Tick(float DeltaTime) override;
+
+	//Funkcja do kalkulowania promienia
+	bool CalculateInteractRay();
+
 public:
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
@@ -88,6 +94,14 @@ protected:
 	/** Resets HMD orientation and position in VR. */
 	void OnResetVR();
 
+
+	//Przycisk służący do interackji z otoczeniem
+	void InteractButton();
+
+	//Przycisk specjalny, służy do spawnowania minionów
+	void SpecialButton();
+
+
 	/** Handles moving forward/backward */
 	void MoveForward(float Val);
 
@@ -105,6 +119,9 @@ protected:
 	 * @param Rate	This is a normalized rate, i.e. 1.0 means 100% of desired turn rate
 	 */
 	void LookUpAtRate(float Rate);
+
+
+
 
 	struct TouchData
 	{
@@ -138,5 +155,29 @@ public:
 	/** Returns FirstPersonCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
+
+
+	//Maksymalna długość interakcji w Unreal Units
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
+	float MaxInteractLength;
+
+private:
+	//Wynik raycastu interakcji
+	FHitResult OutHit;
+
+	//Czy jest obiekt do interakcji w zasięgu
+	bool bInteractActorInRange;
+
+	//Blokada możliwości interakcji
+	bool bCanInteract;
+
+	//Tworzenie wektora dystansu kamery
+	FVector CameraLocation;
+
+	//Punkt na który skierowana jest kamera z uwzględnieniem maksymalnej odległości
+	FVector InteractionRayEnd;
+
+	//Właściwości raycastu
+	FCollisionQueryParams CollisionParams;
 };
 

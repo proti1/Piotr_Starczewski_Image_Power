@@ -42,3 +42,4 @@ c:\program files\epic games\ue_4.25\engine\source\runtime\headmounteddisplay\pub
 c:\program files\epic games\ue_4.25\engine\source\runtime\headmounteddisplay\public\LateUpdateManager.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\HeadMountedDisplay\Public\XRMotionControllerBase.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h

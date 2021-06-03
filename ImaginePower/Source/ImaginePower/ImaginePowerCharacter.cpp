@@ -1,4 +1,4 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+﻿// Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "ImaginePowerCharacter.h"
 #include "ImaginePowerProjectile.h"
@@ -11,6 +11,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "MotionControllerComponent.h"
 #include "XRMotionControllerBase.h" // for FXRMotionControllerBase::RightHandSourceId
+#include "DrawDebugHelpers.h" //Do wyświetlania informacji debugowych w edytorze
 
 DEFINE_LOG_CATEGORY_STATIC(LogFPChar, Warning, All);
 
@@ -82,6 +83,13 @@ AImaginePowerCharacter::AImaginePowerCharacter()
 
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
+
+
+	//Domyślna maksymalna odległość interakcji
+	MaxInteractLength = 300.0f;
+
+	//Domyślnie zezwala na interakcję
+	bCanInteract = true;
 }
 
 void AImaginePowerCharacter::BeginPlay()
@@ -104,6 +112,25 @@ void AImaginePowerCharacter::BeginPlay()
 		Mesh1P->SetHiddenInGame(false, true);
 	}
 }
+
+void AImaginePowerCharacter::Tick(float DeltaTime)
+{
+
+	if (CalculateInteractRay())
+	{
+		bInteractActorInRange = true;
+	}
+	else
+	{
+		bInteractActorInRange = false;
+	}
+
+	//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
+}
+
+
 
 //////////////////////////////////////////////////////////////////////////
 // Input
@@ -136,6 +163,9 @@ void AImaginePowerCharacter::SetupPlayerInputComponent(class UInputComponent* Pl
 	PlayerInputComponent->BindAxis("TurnRate", this, &AImaginePowerCharacter::TurnAtRate);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 	PlayerInputComponent->BindAxis("LookUpRate", this, &AImaginePowerCharacter::LookUpAtRate);
+
+	PlayerInputComponent->BindAction("InteractButton", IE_Pressed, this, &AImaginePowerCharacter::InteractButton);
+	PlayerInputComponent->BindAction("SpecialButton", IE_Pressed, this, &AImaginePowerCharacter::InteractButton);
 }
 
 void AImaginePowerCharacter::OnFire()
@@ -184,6 +214,12 @@ void AImaginePowerCharacter::OnFire()
 			AnimInstance->Montage_Play(FireAnimation, 1.f);
 		}
 	}
+}
+
+void AImaginePowerCharacter::SpecialButton()
+{
+	if (GEngine)
+		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, TEXT("SpecialButton"));
 }
 
 void AImaginePowerCharacter::OnResetVR()
@@ -297,4 +333,43 @@ bool AImaginePowerCharacter::EnableTouchscreenMovement(class UInputComponent* Pl
 	}
 	
 	return false;
+}
+
+void AImaginePowerCharacter::InteractButton()
+{\
+	//Linia do debugowania
+	DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, true, 2.0f, -1, 5.0f);
+
+	//Do debugowania, wypisz nazwę interaktowanego aktora
+	if (bInteractActorInRange && GEngine)
+	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("Aktor: %s"), *OutHit.GetActor()->GetName()));
+}
+
+//Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem 
+bool AImaginePowerCharacter::CalculateInteractRay()
+{
+
+	if (bCanInteract)
+	{
+		//Ustawianie wektora lokacji kamery
+		CameraLocation = FirstPersonCameraComponent->GetComponentLocation();
+
+		//Punkt na który skierowana jest kamera z uwzględnieniem maksymalnej odległości
+		InteractionRayEnd = FirstPersonCameraComponent->GetForwardVector() * MaxInteractLength + CameraLocation;
+
+		//Wylicz promień, jeśli niczego nie dotknie wyjdź z funkcji
+		if (GetWorld()->LineTraceSingleByChannel(OutHit, CameraLocation, InteractionRayEnd, ECC_Visibility, CollisionParams))
+		{
+			//Sprawdź czy promień dotyka aktora który może interaktować 
+			if (OutHit.bBlockingHit && OutHit.Actor->ActorHasTag(FName("Interactible")))
+			{
+				//Zalicz funkcje przy spełnieniu wszystkich argumentów
+				bInteractActorInRange = true;
+				return (true);
+			}
+		}
+	}
+
+	//Przy braku spełnienia któregoś z warunków zakończ funkcje fałszem
+	return (false);
 }
