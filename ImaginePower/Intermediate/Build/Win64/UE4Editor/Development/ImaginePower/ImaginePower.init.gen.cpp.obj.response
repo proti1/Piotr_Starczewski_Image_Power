@@ -32,16 +32,14 @@
 /wd4244
 /wd4838
 /I .
-/I "C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower"
-/I "C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Source"
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
+/I Runtime\Engine\Classes
+/I Runtime\Engine\Public
 /I Runtime\TraceLog\Public
 /I Runtime\Core\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime\CoreUObject\Public
-/I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
-/I Runtime\Engine\Classes
-/I Runtime\Engine\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -232,6 +230,8 @@
 /I Runtime\Experimental\GeometryCollectionSimulationCore\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
+/I C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower
+/I C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ThirdParty\PhysX3\PxShared\include
@@ -263,12 +263,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePower.init.gen.cpp"
-/FI"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h"
-/Fo"C:\Users\Proti\Documents\Unreal Projects\ImaginePower\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\ImaginePower.init.gen.cpp.obj"
+/FI"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePower.init.gen.cpp"
+/FI"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h"
+/Fo"C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\ImaginePower.init.gen.cpp.obj"
 /TP
 /GR-
 /W4

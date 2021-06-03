@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ImaginePower.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{B9455A23-E33F-4ED2-98FF-E4C724FC1EA1}</UniqueIdentifier>
+      <UniqueIdentifier>{DBA84171-159B-4CA5-BA5C-0E68667B57AF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ImaginePower.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{FD425612-E3A9-49E5-B36F-F87D89D72759}</UniqueIdentifier>
+      <UniqueIdentifier>{2026BC5E-6A7B-41A9-BF96-1F642BD3D0C1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,8 +30,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ImaginePower">
-      <UniqueIdentifier>{903F5928-4A43-4E15-9F51-E059FACF806D}</UniqueIdentifier>
+      <UniqueIdentifier>{FB7D77A8-EF0F-4F6F-B6A6-5E7EA1B858B9}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ImaginePower\Container.cpp">
+      <Filter>Source\ImaginePower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ImaginePower\Container.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ImaginePower\ImaginePower.Build.cs">
       <Filter>Source\ImaginePower</Filter>
     </None>
@@ -63,6 +69,18 @@
       <Filter>Source\ImaginePower</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ImaginePower\ImaginePowerProjectile.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ImaginePower\Minion.cpp">
+      <Filter>Source\ImaginePower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ImaginePower\Minion.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ImaginePower\MinionInterface.cpp">
+      <Filter>Source\ImaginePower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ImaginePower\MinionInterface.h">
       <Filter>Source\ImaginePower</Filter>
     </ClInclude>
   </ItemGroup>

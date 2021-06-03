@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"C:\\Users\\Proti\\Documents\\Unreal Projects\\ImaginePower\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower\\ImaginePower.Build.cs",
-		"C:\\Users\\Proti\\Documents\\Unreal Projects\\ImaginePower\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower.Target.cs",
-		"C:\\Users\\Proti\\Documents\\Unreal Projects\\ImaginePower\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePowerEditor.Target.cs"
+		"C:\\Projects\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower\\ImaginePower.Build.cs",
+		"C:\\Projects\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower.Target.cs",
+		"C:\\Projects\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePowerEditor.Target.cs"
 	],
 	"EngineVersion": "4.25.4"
 }

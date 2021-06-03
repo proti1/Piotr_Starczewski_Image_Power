@@ -1,0 +1,5 @@
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower/MinionInterface.h
+c:\projects\piotr_starczewski_imagine_power\imaginepower\intermediate\build\win64\ue4editor\inc\imaginepower\MinionInterface.generated.h

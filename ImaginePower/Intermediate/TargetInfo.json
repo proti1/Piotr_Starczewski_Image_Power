@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "ImaginePower",
-			"Path": "C:\\Users\\Proti\\Documents\\Unreal Projects\\ImaginePower\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower.Target.cs",
+			"Path": "C:\\Projects\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePower.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "ImaginePowerEditor",
-			"Path": "C:\\Users\\Proti\\Documents\\Unreal Projects\\ImaginePower\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePowerEditor.Target.cs",
+			"Path": "C:\\Projects\\Piotr_Starczewski_Imagine_Power\\ImaginePower\\Source\\ImaginePowerEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
