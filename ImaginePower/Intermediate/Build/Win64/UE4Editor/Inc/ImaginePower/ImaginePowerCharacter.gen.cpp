@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_AImaginePowerCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ImaginePower();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
@@ -41,6 +42,10 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InteractingActor_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractingActor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxInteractLength_MetaData[];
 #endif
@@ -122,6 +127,15 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData[] = {
+		{ "Category", "Default" },
+		{ "Comment", "//Maksymalna d\xc5\x82ugo\xc5\x9b\xc4\x87 interakcji w Unreal Units\n" },
+		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
+		{ "ToolTip", "Maksymalna d\xc5\x82ugo\xc5\x9b\xc4\x87 interakcji w Unreal Units" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor = { "InteractingActor", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, InteractingActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength_MetaData[] = {
 		{ "Category", "Camera" },
@@ -282,6 +296,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_Mesh1P = { "Mesh1P", nullptr, (EPropertyFlags)0x00400000000b0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, Mesh1P), Z_Construct_UClass_USkeletalMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_Mesh1P_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_Mesh1P_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AImaginePowerCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_FireAnimation,
@@ -329,7 +344,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AImaginePowerCharacter, 3104268802);
+	IMPLEMENT_CLASS(AImaginePowerCharacter, 310870315);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AImaginePowerCharacter>()
 	{
 		return AImaginePowerCharacter::StaticClass();

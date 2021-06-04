@@ -62,6 +62,7 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget")
 	UUserWidget* WidgetRef;
 
+	//Zadeklarowany Enum z ObjectList.h
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EObjectList SearchedObject;
 

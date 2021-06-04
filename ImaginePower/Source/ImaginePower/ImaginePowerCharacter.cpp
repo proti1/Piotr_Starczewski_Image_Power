@@ -249,9 +249,11 @@ void AImaginePowerCharacter::EndTouch(const ETouchIndex::Type FingerIndex, const
 
 void AImaginePowerCharacter::InteractButton()
 {
-	if (bInteractActorInRange/* && OtherActor != nullptr) && (OtherComp != nullptr))true*/)
+	if (bInteractActorInRange)
 	{
-		IPlayerInteractionInterface::Execute_OnInteract(OutHit.GetActor());
+		//Ustawia aktora do interakcji (także użyte w WB_Interaction Menu do referencji)
+		InteractingActor = OutHit.GetActor();
+		IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
 		//Linia do debugowania
 		DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
 

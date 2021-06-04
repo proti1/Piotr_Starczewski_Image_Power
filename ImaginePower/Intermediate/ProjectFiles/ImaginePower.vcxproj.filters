@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ImaginePower.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{420C4AB2-A49D-4BA4-A995-DF32DC328FD0}</UniqueIdentifier>
+      <UniqueIdentifier>{C6CF1B50-0F98-4BA3-B376-6A20E5E30A78}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ImaginePower.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9CD7FFC6-1765-4E09-A477-B9048A23B226}</UniqueIdentifier>
+      <UniqueIdentifier>{2726289B-2123-435B-83E3-57C17976C66A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ImaginePower">
-      <UniqueIdentifier>{B538EE1D-B0ED-4479-9762-F6D8642D9401}</UniqueIdentifier>
+      <UniqueIdentifier>{43AB5D60-6FE8-4AEF-9D3B-12CC69D93505}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ImaginePower\Container.cpp">
       <Filter>Source\ImaginePower</Filter>
@@ -71,6 +71,12 @@
     <ClInclude Include="..\..\Source\ImaginePower\ImaginePowerProjectile.h">
       <Filter>Source\ImaginePower</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ImaginePower\InteractionMenu.cpp">
+      <Filter>Source\ImaginePower</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ImaginePower\InteractionMenu.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ImaginePower\Minion.cpp">
       <Filter>Source\ImaginePower</Filter>
     </ClCompile>
@@ -81,6 +87,9 @@
       <Filter>Source\ImaginePower</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ImaginePower\MinionInterface.h">
+      <Filter>Source\ImaginePower</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\ImaginePower\ObjectList.h">
       <Filter>Source\ImaginePower</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\ImaginePower\PlayerInteractionInterface.cpp">

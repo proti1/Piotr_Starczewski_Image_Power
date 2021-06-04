@@ -113,7 +113,9 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData[] = {
 		{ "Category", "Minion" },
+		{ "Comment", "//Zadeklarowany Enum z ObjectList.h\n" },
 		{ "ModuleRelativePath", "Minion.h" },
+		{ "ToolTip", "Zadeklarowany Enum z ObjectList.h" },
 	};
 #endif
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject = { "SearchedObject", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinion, SearchedObject), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData)) };
@@ -173,7 +175,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinion, 1623015000);
+	IMPLEMENT_CLASS(AMinion, 152648858);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AMinion>()
 	{
 		return AMinion::StaticClass();

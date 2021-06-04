@@ -162,6 +162,10 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
 	float MaxInteractLength;
 
+	//Maksymalna długość interakcji w Unreal Units
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly	, Category = Default)
+	AActor* InteractingActor;
+
 private:
 
 	//Czy jest obiekt do interakcji w zasięgu
