@@ -13,21 +13,21 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define IMAGINEPOWER_Minion_generated_h
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_SPARSE_DATA
-#define ImaginePower_Source_ImaginePower_Minion_h_14_RPC_WRAPPERS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_SPARSE_DATA
+#define ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS \
 	virtual void OnInteract_Implementation(); \
  \
 	DECLARE_FUNCTION(execOnInteract);
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execOnInteract);
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_EVENT_PARMS
-#define ImaginePower_Source_ImaginePower_Minion_h_14_CALLBACK_WRAPPERS
-#define ImaginePower_Source_ImaginePower_Minion_h_14_INCLASS_NO_PURE_DECLS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_EVENT_PARMS
+#define ImaginePower_Source_ImaginePower_Minion_h_16_CALLBACK_WRAPPERS
+#define ImaginePower_Source_ImaginePower_Minion_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMinion(); \
 	friend struct Z_Construct_UClass_AMinion_Statics; \
@@ -37,7 +37,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AMinion*>(this); }
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_INCLASS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesAMinion(); \
 	friend struct Z_Construct_UClass_AMinion_Statics; \
@@ -47,7 +47,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<AMinion*>(this); }
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_STANDARD_CONSTRUCTORS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMinion(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AMinion) \
@@ -60,7 +60,7 @@ private: \
 public:
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_ENHANCED_CONSTRUCTORS \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API AMinion(AMinion&&); \
@@ -71,33 +71,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMinion); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMinion)
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_PRIVATE_PROPERTY_OFFSET
-#define ImaginePower_Source_ImaginePower_Minion_h_11_PROLOG \
-	ImaginePower_Source_ImaginePower_Minion_h_14_EVENT_PARMS
+#define ImaginePower_Source_ImaginePower_Minion_h_16_PRIVATE_PROPERTY_OFFSET
+#define ImaginePower_Source_ImaginePower_Minion_h_12_PROLOG \
+	ImaginePower_Source_ImaginePower_Minion_h_16_EVENT_PARMS
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_GENERATED_BODY_LEGACY \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ImaginePower_Source_ImaginePower_Minion_h_14_PRIVATE_PROPERTY_OFFSET \
-	ImaginePower_Source_ImaginePower_Minion_h_14_SPARSE_DATA \
-	ImaginePower_Source_ImaginePower_Minion_h_14_RPC_WRAPPERS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_CALLBACK_WRAPPERS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_INCLASS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_STANDARD_CONSTRUCTORS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_PRIVATE_PROPERTY_OFFSET \
+	ImaginePower_Source_ImaginePower_Minion_h_16_SPARSE_DATA \
+	ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_CALLBACK_WRAPPERS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_INCLASS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define ImaginePower_Source_ImaginePower_Minion_h_14_GENERATED_BODY \
+#define ImaginePower_Source_ImaginePower_Minion_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	ImaginePower_Source_ImaginePower_Minion_h_14_PRIVATE_PROPERTY_OFFSET \
-	ImaginePower_Source_ImaginePower_Minion_h_14_SPARSE_DATA \
-	ImaginePower_Source_ImaginePower_Minion_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_CALLBACK_WRAPPERS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_INCLASS_NO_PURE_DECLS \
-	ImaginePower_Source_ImaginePower_Minion_h_14_ENHANCED_CONSTRUCTORS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_PRIVATE_PROPERTY_OFFSET \
+	ImaginePower_Source_ImaginePower_Minion_h_16_SPARSE_DATA \
+	ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_CALLBACK_WRAPPERS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_INCLASS_NO_PURE_DECLS \
+	ImaginePower_Source_ImaginePower_Minion_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

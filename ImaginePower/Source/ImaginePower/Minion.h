@@ -6,12 +6,15 @@
 #include "GameFramework/Character.h"
 #include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
 #include "Blueprint/UserWidget.h"
+#include "ObjectList.h" //Dodaj plik z Enumem	 EObjectList
 #include "Minion.generated.h"
 
 UCLASS()
 class IMAGINEPOWER_API AMinion : public ACharacter, public IPlayerInteractionInterface
 {
-	GENERATED_BODY()
+
+GENERATED_BODY()
+
 
 public:
 	// Sets default values for this character's properties
@@ -44,6 +47,12 @@ protected:
 	//Referencja do kontrolera gracza
 	APlayerController* Controller;
 
+	//Informacje o systemie wprowadzania
+	FInputModeUIOnly InputModeData;
+
+	//Jeśli wykonuje czynność ustaw aktora jako zajęty
+	bool bIsBusy;
+
 public:
 	//Widget do wyświetlenia po interakcji
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
@@ -52,5 +61,8 @@ public:
 	//Referencja do widgeta
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget")
 	UUserWidget* WidgetRef;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EObjectList SearchedObject;
 
 };

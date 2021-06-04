@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_AMinion();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_ImaginePower();
+	IMAGINEPOWER_API UEnum* Z_Construct_UEnum_ImaginePower_EObjectList();
 	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_UPlayerInteractionInterface_NoRegister();
@@ -78,6 +79,11 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SearchedObject_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_SearchedObject;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_SearchedObject_Underlying;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_WidgetRef_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_WidgetRef;
@@ -105,6 +111,14 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData[] = {
+		{ "Category", "Minion" },
+		{ "ModuleRelativePath", "Minion.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject = { "SearchedObject", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinion, SearchedObject), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::NewProp_WidgetRef_MetaData[] = {
 		{ "Category", "Widget" },
 		{ "Comment", "//Referencja do widgeta\n" },
@@ -124,6 +138,8 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay = { "WidgetToDisplay", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinion, WidgetToDisplay), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinion_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_Underlying,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_WidgetRef,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay,
 	};
@@ -157,7 +173,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinion, 3240926578);
+	IMPLEMENT_CLASS(AMinion, 1623015000);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AMinion>()
 	{
 		return AMinion::StaticClass();

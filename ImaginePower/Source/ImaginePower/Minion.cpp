@@ -6,18 +6,20 @@
 // Sets default values
 AMinion::AMinion()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//Dodaj tag informujący że można interaktować z minionem
 	this->Tags.Add(FName("Interactible"));
 
+	bIsBusy = false;
 }
 
 // Called when the game starts or when spawned
 void AMinion::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -39,14 +41,16 @@ void AMinion::OnInteract_Implementation()
 {
 
 	//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
-	
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("Interakcja %s"), *this->GetName()));
 
-	DisplayMenuToPlayer();
+	if (!bIsBusy)
+	{
+		DisplayMenuToPlayer();
+	}
 }
 
-//Stwórz menu wyboru przedmiotu z blueprint
+//Stwórz menu wyboru przedmiotu z blueprintu
 void AMinion::DisplayMenuToPlayer()
 {
 	//Zinicjuj referencje do pawna gracza
@@ -58,18 +62,39 @@ void AMinion::DisplayMenuToPlayer()
 	//Sprawdź referencje
 	if (WidgetToDisplay != nullptr && Controller != nullptr)
 	{
-		//Stwórz widget i dodaj go do viewportu
+		//Stwórz widget
 		WidgetRef = CreateWidget<UUserWidget>(Controller, WidgetToDisplay);
 
-		WidgetRef->AddToViewport();
+		//Jeśli widget istnieje, dodag do viewportu i ustaw mysz do interakcji z interfejsem
+		if (WidgetRef)
+		{
+			//Dodaj do viewportu listę wyboru
+			WidgetRef->AddToViewport();
 
-		if (GEngine)
-			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, FString::Printf(TEXT("widget")));
+			//Ustaw dane dla kontrolera - blokada kontroli z grą poza interfejcem
+			InputModeData.SetWidgetToFocus(WidgetRef->TakeWidget());
+			InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
+
+			//Ustaw sterowanie na tylko interfejs
+			Controller->SetInputMode(InputModeData);
+
+			//Pokaż kursor
+			Controller->bShowMouseCursor = true;
+
+			//Debug, sprawdź czy widget istnieje
+			if (GEngine)
+				GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, FString::Printf(TEXT("openning widget")));
+		}
+
+
+		//else if (GEngine)
+		//{
+			//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("WIDGET ERROR")));
+		//}
 	}
-	else
+	//Przy braku 
+	else if (GEngine)
 	{
-		if (GEngine)
-			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("NO WORK")));
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("WIDGET ERROR")));
 	}
-
 }
