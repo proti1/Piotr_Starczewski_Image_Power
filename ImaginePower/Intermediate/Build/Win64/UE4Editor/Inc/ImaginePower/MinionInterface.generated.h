@@ -14,8 +14,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define IMAGINEPOWER_MinionInterface_generated_h
 
 #define ImaginePower_Source_ImaginePower_MinionInterface_h_13_SPARSE_DATA
-#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS
-#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS
+#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS \
+	virtual void PickUp_Implementation() {}; \
+	virtual void LockState_Implementation() {}; \
+ \
+	DECLARE_FUNCTION(execPickUp); \
+	DECLARE_FUNCTION(execLockState);
+
+
+#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	virtual void PickUp_Implementation() {}; \
+	virtual void LockState_Implementation() {}; \
+ \
+	DECLARE_FUNCTION(execPickUp); \
+	DECLARE_FUNCTION(execLockState);
+
+
+#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_EVENT_PARMS
+#define ImaginePower_Source_ImaginePower_MinionInterface_h_13_CALLBACK_WRAPPERS
 #define ImaginePower_Source_ImaginePower_MinionInterface_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	IMAGINEPOWER_API UMinionInterface(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
@@ -72,6 +88,8 @@ protected: \
 public: \
 	typedef UMinionInterface UClassType; \
 	typedef IMinionInterface ThisClass; \
+	static void Execute_LockState(UObject* O); \
+	static void Execute_PickUp(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
@@ -81,15 +99,21 @@ protected: \
 public: \
 	typedef UMinionInterface UClassType; \
 	typedef IMinionInterface ThisClass; \
+	static void Execute_LockState(UObject* O); \
+	static void Execute_PickUp(UObject* O); \
 	virtual UObject* _getUObject() const { check(0 && "Missing required implementation."); return nullptr; }
 
 
-#define ImaginePower_Source_ImaginePower_MinionInterface_h_10_PROLOG
+#define ImaginePower_Source_ImaginePower_MinionInterface_h_10_PROLOG \
+	ImaginePower_Source_ImaginePower_MinionInterface_h_13_EVENT_PARMS
+
+
 #define ImaginePower_Source_ImaginePower_MinionInterface_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_SPARSE_DATA \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS \
+	ImaginePower_Source_ImaginePower_MinionInterface_h_13_CALLBACK_WRAPPERS \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_INCLASS_IINTERFACE \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
@@ -100,6 +124,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_SPARSE_DATA \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
+	ImaginePower_Source_ImaginePower_MinionInterface_h_13_CALLBACK_WRAPPERS \
 	ImaginePower_Source_ImaginePower_MinionInterface_h_13_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

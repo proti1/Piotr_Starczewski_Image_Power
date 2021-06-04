@@ -6,11 +6,13 @@
 #include "GameFramework/Character.h"
 #include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
 #include "Blueprint/UserWidget.h"
-#include "ObjectList.h" //Dodaj plik z Enumem	 EObjectList
+#include "ObjectList.h" //Dodaj plik z Enumem EObjectList
+#include "Container.h" //Do wyszukiwania po klasie
+#include "MinionInterface.h" //Interfejs do komunikacji z przedmiotami
 #include "Minion.generated.h"
 
 UCLASS()
-class IMAGINEPOWER_API AMinion : public ACharacter, public IPlayerInteractionInterface
+class IMAGINEPOWER_API AMinion : public ACharacter, public IPlayerInteractionInterface, public IMinionInterface
 {
 
 GENERATED_BODY()
@@ -40,6 +42,10 @@ public:
 	void OnInteract();
 	virtual void OnInteract_Implementation() override;
 
+	//Zadeklarowany Enum z ObjectList.h
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EObjectList SearchedObject;
+
 	//Funkcja do rozpoczęcia poszukiwaneia itemów w pobliżu
 	UFUNCTION(BlueprintCallable, Category = "AI")
 	void StartSearchingItems(EObjectList ObjectToSearch);
@@ -62,9 +68,6 @@ protected:
 	//Jeśli wykonuje czynność ustaw aktora jako zajęty
 	bool bIsBusy;
 
-	//Przechowuje wszystkich actorów Cointainer
-	TArray<AActor*> FoundActors;
-
 public:
 	//Widget do wyświetlenia po interakcji
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
@@ -73,9 +76,5 @@ public:
 	//Referencja do widgeta
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget")
 	UUserWidget* WidgetRef;
-
-	//Zadeklarowany Enum z ObjectList.h
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	EObjectList SearchedObject;
 
 };

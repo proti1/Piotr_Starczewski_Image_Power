@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 #pragma once
 
@@ -19,7 +19,13 @@ class UMinionInterface : public UInterface
 class IMAGINEPOWER_API IMinionInterface
 {
 	GENERATED_BODY()
-
-	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
+		
 public:
+		//Zablokuj objekt przed interakcją podczas korzystania
+		UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = " Interaction")
+		void LockState();
+
+		//Podnieś objekt
+		UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = " Interaction")
+		void PickUp();
 };

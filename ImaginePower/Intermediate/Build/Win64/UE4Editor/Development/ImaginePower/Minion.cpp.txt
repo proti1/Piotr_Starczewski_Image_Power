@@ -125,4 +125,19 @@ C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
 c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ObjectList.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ObjectList.generated.h
+c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\Container.h
+c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\MinionInterface.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\MinionInterface.generated.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\Container.generated.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\Minion.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+c:\program files\epic games\ue_4.25\engine\source\runtime\engine\classes\kismet\GameplayStaticsTypes.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

@@ -3,7 +3,6 @@
 
 #include "Minion.h"
 #include "Kismet/GameplayStatics.h" //Użyte aby zbobyć aktorów ze świata
-#include "Container.h" //Do wyszukiwania po klasie
 
 // Sets default values
 AMinion::AMinion()
@@ -103,13 +102,5 @@ void AMinion::DisplayMenuToPlayer()
 
 void AMinion::StartSearchingItems(EObjectList ObjectToSearch)
 {
-	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AContainer::StaticClass(), FoundActors);
 
-	for (AContainer* TActor : FoundActors)
-	{
-		AContainer* SearchedActor = Cast<AContainer*>(TActor);
-
-		if (SearchedActor != nullptr)
-			// Do what ever you need with your MyActor
-	}
 }

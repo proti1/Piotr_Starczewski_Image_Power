@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+﻿// Fill out your copyright notice in the Description page of Project Settings.
 
 
 #include "Container.h"
@@ -16,6 +16,8 @@ void AContainer::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//Dodaje tag aby Container był domyśnie gotów
+	this->Tags.Add(FName("Interactible"));
 }
 
 // Called every frame
@@ -23,5 +25,27 @@ void AContainer::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+}
+
+void AContainer::PickUp_Implementation()
+{
+
+	this->Destroy();
+}
+
+//Ustaw stan kontenera podczas gdy jest używany przez miniona
+void AContainer::SetAsBusy(bool bShouldBeBusy)
+{
+	bIsBusy = bShouldBeBusy;
+	if (bShouldBeBusy)
+	{
+		//Dodaj tag informujący że można interaktować z minionem
+		this->Tags.Remove(FName("Interactible"));
+	}
+	else
+	{
+		//Usuń tag informujący że można interaktować z minionem
+		this->Tags.Add(FName("Interactible"));
+	}
 }
 
