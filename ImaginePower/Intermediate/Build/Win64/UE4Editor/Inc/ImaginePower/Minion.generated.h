@@ -8,6 +8,7 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+enum class EObjectList : uint8;
 #ifdef IMAGINEPOWER_Minion_generated_h
 #error "Minion.generated.h already included, missing '#pragma once' in Minion.h"
 #endif
@@ -17,11 +18,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS \
 	virtual void OnInteract_Implementation(); \
  \
+	DECLARE_FUNCTION(execStartSearchingItems); \
 	DECLARE_FUNCTION(execOnInteract);
 
 
 #define ImaginePower_Source_ImaginePower_Minion_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execStartSearchingItems); \
 	DECLARE_FUNCTION(execOnInteract);
 
 

@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePower_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xDF8695C0,
+				0x6D9745F5,
 				0x3A30B7E7,
 				METADATA_PARAMS(nullptr, 0)
 			};

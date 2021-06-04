@@ -37,8 +37,17 @@ public:
 
 	//Zdefiniuj funkcję interfejsu IPlayerInteractionInterface
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Player Interaction")
-		void OnInteract();
+	void OnInteract();
 	virtual void OnInteract_Implementation() override;
+
+	//Funkcja do rozpoczęcia poszukiwaneia itemów w pobliżu
+	UFUNCTION(BlueprintCallable, Category = "AI")
+	void StartSearchingItems(EObjectList ObjectToSearch);
+
+	//Zaczyna BT, wystarczy wywołać raz
+	void StartBehaviorTree();
+
+
 
 protected:
 	//Referencja do pawna gracza
@@ -52,6 +61,9 @@ protected:
 
 	//Jeśli wykonuje czynność ustaw aktora jako zajęty
 	bool bIsBusy;
+
+	//Przechowuje wszystkich actorów Cointainer
+	TArray<AActor*> FoundActors;
 
 public:
 	//Widget do wyświetlenia po interakcji
