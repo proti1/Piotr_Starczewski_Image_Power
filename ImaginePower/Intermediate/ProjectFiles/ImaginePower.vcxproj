@@ -51,7 +51,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6FE50F42-4186-43BA-8F57-2362B2DD6903}</ProjectGuid>
+    <ProjectGuid>{81DB9096-98C8-4805-B7F3-5678BB4E9B2D}</ProjectGuid>
     <Keyword>MakeFileProj</Keyword>
     <RootNamespace>ImaginePower</RootNamespace>
     <PlatformToolset>v141</PlatformToolset>

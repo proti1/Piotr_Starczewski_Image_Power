@@ -73,7 +73,6 @@ void AMinion::DisplayMenuToPlayer()
 			WidgetRef->AddToViewport();
 
 			//Ustaw dane dla kontrolera - blokada kontroli z grą poza interfejcem
-			InputModeData.SetWidgetToFocus(WidgetRef->TakeWidget());
 			InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
 
 			//Ustaw sterowanie na tylko interfejs
@@ -83,24 +82,25 @@ void AMinion::DisplayMenuToPlayer()
 			Controller->bShowMouseCursor = true;
 
 			//Debug, sprawdź czy widget istnieje
-			if (GEngine)
-				GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, FString::Printf(TEXT("openning widget")));
+			//if (GEngine)
+			//	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Green, FString::Printf(TEXT("openning widget")));
 		}
 
-
-		//else if (GEngine)
-		//{
-			//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("WIDGET ERROR")));
-		//}
+		//Przy braku widgetu
+		else if (GEngine)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("WIDGET ERROR")));
+		}
 	}
-	//Przy braku 
+	//Przy braku widgetu
 	else if (GEngine)
 	{
 			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, FString::Printf(TEXT("WIDGET ERROR")));
 	}
 }
 
-void AMinion::StartSearchingItems(EObjectList ObjectToSearch)
+//Do zrobienia
+void AMinion::StartSearchingItems_Implementation(EObjectList ObjectsToSearch)
 {
 
 }

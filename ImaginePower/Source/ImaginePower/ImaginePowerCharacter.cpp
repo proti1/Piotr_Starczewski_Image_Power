@@ -32,7 +32,7 @@ AImaginePowerCharacter::AImaginePowerCharacter()
 	FirstPersonCameraComponent->SetupAttachment(GetCapsuleComponent());
 	FirstPersonCameraComponent->SetRelativeLocation(FVector(-39.56f, 1.75f, 64.f)); // Position the camera
 	FirstPersonCameraComponent->bUsePawnControlRotation = true;
-
+		
 	// Create a mesh component that will be used when being viewed from a '1st person' view (when controlling this pawn)
 	Mesh1P = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("CharacterMesh1P"));
 	Mesh1P->SetOnlyOwnerSee(true);
@@ -254,8 +254,9 @@ void AImaginePowerCharacter::InteractButton()
 		//Ustawia aktora do interakcji (także użyte w WB_Interaction Menu do referencji)
 		InteractingActor = OutHit.GetActor();
 		IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
+
 		//Linia do debugowania
-		DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
+		//DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
 
 		//Do debugowania, wypisz nazwę interaktowanego aktora
 		//if (bInteractActorInRange && GEngine)

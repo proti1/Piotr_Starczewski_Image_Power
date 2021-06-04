@@ -4,10 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
 #include "Blueprint/UserWidget.h"
 #include "ObjectList.h" //Dodaj plik z Enumem EObjectList
-#include "Container.h" //Do wyszukiwania po klasie
+#include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji z graczem
 #include "MinionInterface.h" //Interfejs do komunikacji z przedmiotami
 #include "Minion.generated.h"
 
@@ -43,15 +42,19 @@ public:
 	virtual void OnInteract_Implementation() override;
 
 	//Zadeklarowany Enum z ObjectList.h
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
 	EObjectList SearchedObject;
 
-	//Funkcja do rozpoczęcia poszukiwaneia itemów w pobliżu
+	//Funkcja do szukania, niezaimplementowana
 	UFUNCTION(BlueprintCallable, Category = "AI")
-	void StartSearchingItems(EObjectList ObjectToSearch);
+	void StartSearchingItems_Implementation(EObjectList ObjectsToSearch);
+
+	//Jeśli wykonuje czynność ustaw aktora jako zajęty
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "AI")
+	bool bIsBusy;
 
 	//Zaczyna BT, wystarczy wywołać raz
-	void StartBehaviorTree();
+	//void StartBehaviorTree();
 
 
 
@@ -64,9 +67,6 @@ protected:
 
 	//Informacje o systemie wprowadzania
 	FInputModeUIOnly InputModeData;
-
-	//Jeśli wykonuje czynność ustaw aktora jako zajęty
-	bool bIsBusy;
 
 public:
 	//Widget do wyświetlenia po interakcji

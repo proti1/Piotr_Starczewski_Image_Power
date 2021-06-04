@@ -11,7 +11,7 @@ enum class EObjectList : uint8 {
 	OL_Nothing		UMETA(DisplayName = "Nothing"),
 
     OL_Wood			UMETA(DisplayName="Wood"),
-	OL_Stone		UMETA(DisplayName="Rain"),
+	OL_Stone		UMETA(DisplayName="Stone"),
 	OL_Gold			UMETA(DisplayName="Gold"),
 
 	OL_Max			UMETA(Hidden)	

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\ImaginePower.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{C6CF1B50-0F98-4BA3-B376-6A20E5E30A78}</UniqueIdentifier>
+      <UniqueIdentifier>{D33DA8A7-869C-4812-8D5E-6DE7D7232252}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\ImaginePower.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{2726289B-2123-435B-83E3-57C17976C66A}</UniqueIdentifier>
+      <UniqueIdentifier>{3D3C802F-F057-46C4-A391-6C48F3EE3A08}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\ImaginePower">
-      <UniqueIdentifier>{43AB5D60-6FE8-4AEF-9D3B-12CC69D93505}</UniqueIdentifier>
+      <UniqueIdentifier>{CF66B9B8-BBA8-4DB6-9450-570470D47774}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\ImaginePower\Container.cpp">
       <Filter>Source\ImaginePower</Filter>

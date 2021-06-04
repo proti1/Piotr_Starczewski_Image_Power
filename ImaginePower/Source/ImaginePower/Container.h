@@ -39,5 +39,5 @@ public:
 
 	//Zadeklarowany Enum z ObjectList.h
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	EObjectList SearchedObject;
+	EObjectList NeededObject;
 };

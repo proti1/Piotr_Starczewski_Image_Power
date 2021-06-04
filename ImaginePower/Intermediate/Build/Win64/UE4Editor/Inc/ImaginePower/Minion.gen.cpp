@@ -23,12 +23,12 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_UPlayerInteractionInterface_NoRegister();
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_UMinionInterface_NoRegister();
 // End Cross Module References
-	DEFINE_FUNCTION(AMinion::execStartSearchingItems)
+	DEFINE_FUNCTION(AMinion::execStartSearchingItems_Implementation)
 	{
-		P_GET_ENUM(EObjectList,Z_Param_ObjectToSearch);
+		P_GET_ENUM(EObjectList,Z_Param_ObjectsToSearch);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->StartSearchingItems(EObjectList(Z_Param_ObjectToSearch));
+		P_THIS->StartSearchingItems_Implementation(EObjectList(Z_Param_ObjectsToSearch));
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(AMinion::execOnInteract)
@@ -48,7 +48,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		UClass* Class = AMinion::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "OnInteract", &AMinion::execOnInteract },
-			{ "StartSearchingItems", &AMinion::execStartSearchingItems },
+			{ "StartSearchingItems_Implementation", &AMinion::execStartSearchingItems_Implementation },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -77,41 +77,41 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		}
 		return ReturnFunction;
 	}
-	struct Z_Construct_UFunction_AMinion_StartSearchingItems_Statics
+	struct Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics
 	{
-		struct Minion_eventStartSearchingItems_Parms
+		struct Minion_eventStartSearchingItems_Implementation_Parms
 		{
-			EObjectList ObjectToSearch;
+			EObjectList ObjectsToSearch;
 		};
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ObjectToSearch;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ObjectToSearch_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_ObjectsToSearch;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_ObjectsToSearch_Underlying;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::NewProp_ObjectToSearch = { "ObjectToSearch", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Minion_eventStartSearchingItems_Parms, ObjectToSearch), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::NewProp_ObjectToSearch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
-	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::NewProp_ObjectToSearch,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::NewProp_ObjectToSearch_Underlying,
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::NewProp_ObjectsToSearch = { "ObjectsToSearch", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Minion_eventStartSearchingItems_Implementation_Parms, ObjectsToSearch), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::NewProp_ObjectsToSearch_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::NewProp_ObjectsToSearch,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::NewProp_ObjectsToSearch_Underlying,
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::Function_MetaDataParams[] = {
 		{ "Category", "AI" },
-		{ "Comment", "//Funkcja do rozpocz\xc4\x99""cia poszukiwaneia item\xc3\xb3w w pobli\xc5\xbcu\n" },
+		{ "Comment", "//Funkcja do szukania, niezaimplementowana\n" },
 		{ "ModuleRelativePath", "Minion.h" },
-		{ "ToolTip", "Funkcja do rozpocz\xc4\x99""cia poszukiwaneia item\xc3\xb3w w pobli\xc5\xbcu" },
+		{ "ToolTip", "Funkcja do szukania, niezaimplementowana" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMinion, nullptr, "StartSearchingItems", nullptr, nullptr, sizeof(Minion_eventStartSearchingItems_Parms), Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AMinion_StartSearchingItems()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMinion, nullptr, "StartSearchingItems_Implementation", nullptr, nullptr, sizeof(Minion_eventStartSearchingItems_Implementation_Parms), Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMinion_StartSearchingItems_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -135,6 +135,11 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_WidgetToDisplay;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsBusy_MetaData[];
+#endif
+		static void NewProp_bIsBusy_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsBusy;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SearchedObject_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_SearchedObject;
@@ -150,7 +155,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMinion_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMinion_OnInteract, "OnInteract" }, // 1814432996
-		{ &Z_Construct_UFunction_AMinion_StartSearchingItems, "StartSearchingItems" }, // 3668316754
+		{ &Z_Construct_UFunction_AMinion_StartSearchingItems_Implementation, "StartSearchingItems_Implementation" }, // 905604078
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::Class_MetaDataParams[] = {
@@ -179,8 +184,21 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay = { "WidgetToDisplay", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMinion, WidgetToDisplay), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy_MetaData[] = {
+		{ "Category", "AI" },
+		{ "Comment", "//Je\xc5\x9bli wykonuje czynno\xc5\x9b\xc4\x87 ustaw aktora jako zaj\xc4\x99ty\n" },
+		{ "ModuleRelativePath", "Minion.h" },
+		{ "ToolTip", "Je\xc5\x9bli wykonuje czynno\xc5\x9b\xc4\x87 ustaw aktora jako zaj\xc4\x99ty" },
+	};
+#endif
+	void Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy_SetBit(void* Obj)
+	{
+		((AMinion*)Obj)->bIsBusy = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy = { "bIsBusy", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMinion), &Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_MetaData[] = {
-		{ "Category", "Minion" },
+		{ "Category", "AI" },
 		{ "Comment", "//Zadeklarowany Enum z ObjectList.h\n" },
 		{ "ModuleRelativePath", "Minion.h" },
 		{ "ToolTip", "Zadeklarowany Enum z ObjectList.h" },
@@ -191,6 +209,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMinion_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_WidgetRef,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_WidgetToDisplay,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_bIsBusy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMinion_Statics::NewProp_SearchedObject_Underlying,
 	};
@@ -225,7 +244,7 @@ void EmptyLinkFunctionForGeneratedCodeMinion() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMinion, 1896284268);
+	IMPLEMENT_CLASS(AMinion, 1867947043);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AMinion>()
 	{
 		return AMinion::StaticClass();

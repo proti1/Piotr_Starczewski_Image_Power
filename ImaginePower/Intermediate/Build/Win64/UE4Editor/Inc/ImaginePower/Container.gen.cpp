@@ -126,10 +126,10 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SearchedObject_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NeededObject_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_SearchedObject;
-		static const UE4CodeGen_Private::FBytePropertyParams NewProp_SearchedObject_Underlying;
+		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_NeededObject;
+		static const UE4CodeGen_Private::FBytePropertyParams NewProp_NeededObject_Underlying;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
@@ -150,18 +150,18 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 	};
 #endif
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData[] = {
 		{ "Category", "Container" },
 		{ "Comment", "//Zadeklarowany Enum z ObjectList.h\n" },
 		{ "ModuleRelativePath", "Container.h" },
 		{ "ToolTip", "Zadeklarowany Enum z ObjectList.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject = { "SearchedObject", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AContainer, SearchedObject), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject_MetaData)) };
-	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject = { "NeededObject", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AContainer, NeededObject), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData)) };
+	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AContainer_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_SearchedObject_Underlying,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_Underlying,
 	};
 		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AContainer_Statics::InterfaceParams[] = {
 			{ Z_Construct_UClass_UMinionInterface_NoRegister, (int32)VTABLE_OFFSET(AContainer, IMinionInterface), false },
@@ -193,7 +193,7 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AContainer, 3780231812);
+	IMPLEMENT_CLASS(AContainer, 680393265);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AContainer>()
 	{
 		return AContainer::StaticClass();
