@@ -99,7 +99,7 @@ void AMinion::DisplayMenuToPlayer()
 	}
 }
 
-//Do zrobienia
+//Funkcja przejęta w blueprint
 void AMinion::StartSearchingItems_Implementation(EObjectList ObjectsToSearch)
 {
 

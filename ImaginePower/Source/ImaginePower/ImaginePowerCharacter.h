@@ -163,7 +163,7 @@ public:
 	float MaxInteractLength;
 
 	//Maksymalna długość interakcji w Unreal Units
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly	, Category = Default)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
 	AActor* InteractingActor;
 
 private:
