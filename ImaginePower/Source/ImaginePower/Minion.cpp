@@ -69,8 +69,6 @@ void AMinion::DisplayMenuToPlayer()
 		//Jeśli widget istnieje, dodag do viewportu i ustaw mysz do interakcji z interfejsem
 		if (WidgetRef)
 		{
-			//Dodaj do viewportu listę wyboru
-			WidgetRef->AddToViewport();
 
 			//Ustaw dane dla kontrolera - blokada kontroli z grą poza interfejcem
 			InputModeData.SetLockMouseToViewportBehavior(EMouseLockMode::DoNotLock);
@@ -80,6 +78,15 @@ void AMinion::DisplayMenuToPlayer()
 
 			//Pokaż kursor
 			Controller->bShowMouseCursor = true;
+			
+			//Wyłącz przyciski odpowiedzialne za ruch
+			PlayerRef->GetController()->SetIgnoreMoveInput(true);
+
+			//Wyzeruj ruch gracza
+			PlayerRef->GetVelocity() = FVector(0.f);
+
+			//Dodaj do viewportu listę wyboru
+			WidgetRef->AddToViewport();
 
 			//Debug, sprawdź czy widget istnieje
 			//if (GEngine)

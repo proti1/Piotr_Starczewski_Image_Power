@@ -49,6 +49,10 @@ class AImaginePowerCharacter : public ACharacter, public IPlayerInteractionInter
 public:
 	AImaginePowerCharacter();
 
+	//Funkcja do kalkulowania promienia
+	UFUNCTION(BlueprintCallable)
+	void SpawnMinion();
+
 protected:
 	virtual void BeginPlay();
 
@@ -159,20 +163,24 @@ public:
 
 
 	//Maksymalna długość interakcji w Unreal Units
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
 	float MaxInteractLength;
 
-	//Maksymalna długość interakcji w Unreal Units
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
+	//Obecny aktor w interakcji z graczem
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Parameters")
 	AActor* InteractingActor;
 
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditDefaultsOnly, Category = "Parameters")
+	TSubclassOf<AActor> MinionClass;
+
+
 private:
+	//Z tej klasy będą spawnowane miniony
+	//TSubclassOf<class AMinion> MinionClass;
 
-	//Czy jest obiekt do interakcji w zasięgu
-	bool bInteractActorInRange;
-
-	//Blokada możliwości interakcji
-	bool bCanInteract;
+	//Przetrzymóje zespawnowane miniony
+	TArray<AActor*> SpawnedMinions;
 
 	//Tworzenie wektora dystansu kamery
 	FVector CameraLocation;
@@ -185,5 +193,13 @@ private:
 
 	//Właściwości raycastu
 	FCollisionQueryParams CollisionParams;
+
+	//Czy jest obiekt do interakcji w zasięgu
+	bool bInteractActorInRange;
+
+	//Blokada możliwości interakcji
+	bool bCanInteract;
+
+
 };
 

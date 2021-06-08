@@ -84,7 +84,6 @@ AImaginePowerCharacter::AImaginePowerCharacter()
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 
-
 	//Domyślna maksymalna odległość interakcji
 	MaxInteractLength = 300.0f;
 
@@ -135,7 +134,6 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
 }
-
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -343,8 +341,6 @@ void AImaginePowerCharacter::InteractButton()
 		//Jeśli interfejs istnieje, zatrzymaj gracza i zacznij interakcję
 		if (UKismetSystemLibrary::DoesImplementInterface(InteractingActor, UPlayerInteractionInterface::StaticClass()))
 		{
-			this->GetController()->SetIgnoreMoveInput(true);
-			this->GetVelocity() = FVector(0.f);
 			IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
 		}
 
@@ -357,10 +353,42 @@ void AImaginePowerCharacter::InteractButton()
 	}
 }
 
+//Po wciśnięciu przycisku zespawnuj kolejnego miniona
 void AImaginePowerCharacter::SpecialButton()
 {
+
+	//if (SpawnedMinions.Num() < 5)
+	//{
+		//AActor* CreatedMinion = UWorld::SpawnActor()
+	//	SpawnedMinions.Add(NewMinion)
+	//}
 	if (GEngine)
 		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
+	SpawnMinion();
+}
+
+//Wylicz i zespawnuj miniona obok gracza
+void AImaginePowerCharacter::SpawnMinion()
+{
+	if (MinionClass.Get())
+	{
+		/*
+		//Ustaw klasę miniona do zespawnowania
+		ConstructorHelpers::FObjectFinder<UBlueprint> MinionBlueprint(TEXT("Blueprint'/Game/Characters/Minion/BP_Minion'"));
+
+		FRotator SpawnRot = GetActorRotation();
+		FVector SpawnLoc = SpawnRot.RotateVector(FVector(700.f, 0.f, 0.f));
+		SpawnLoc += GetActorLocation();
+
+		//MinionClass = (UClass*)MinionBlueprint.Object->GeneratedClass;
+		FActorSpawnParameters SpawnParams;
+		SpawnParams =
+		GetWorld()->SpawnActor(MinionBlueprint*, , &SpawnLoc, &SpawnRot);
+		*/
+	}
+	FActorSpawnParameters SpawnParams;
+	GetWorld()->SpawnActor<AActor>(MinionClass, GetActorLocation(), GetActorRotation(), SpawnParams);
+
 }
 
 //Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem		

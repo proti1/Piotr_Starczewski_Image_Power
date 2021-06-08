@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define IMAGINEPOWER_ImaginePowerCharacter_generated_h
 
 #define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_SPARSE_DATA
-#define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_RPC_WRAPPERS
-#define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execSpawnMinion);
+
+
+#define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execSpawnMinion);
+
+
 #define ImaginePower_Source_ImaginePower_ImaginePowerCharacter_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAImaginePowerCharacter(); \

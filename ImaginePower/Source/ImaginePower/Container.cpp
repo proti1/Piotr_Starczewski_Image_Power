@@ -10,7 +10,7 @@ AContainer::AContainer()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//Dodaje tag aby Container był domyśnie gotów
-	this->Tags.Add(FName("NotBusy"));
+	this->Tags.Add(FName("Pickupable"));
 }
 
 // Called when the game starts or when spawned
@@ -30,7 +30,6 @@ void AContainer::Tick(float DeltaTime)
 //Zniszcz aktora po interakcji
 void AContainer::PickUp_Implementation()
 {
-
 	this->Destroy();
 }
 
@@ -38,15 +37,5 @@ void AContainer::PickUp_Implementation()
 void AContainer::SetAsBusy(bool bShouldBeBusy)
 {
 	bIsBusy = bShouldBeBusy;
-	if (bShouldBeBusy)
-	{
-		//Dodaj tag informujący że można interaktować z minionem
-		this->Tags.Remove(FName("NotBusy"));
-	}
-	else
-	{
-		//Usuń tag informujący że można interaktować z minionem
-		this->Tags.Add(FName("NotBusy"));
-	}
 }
 
