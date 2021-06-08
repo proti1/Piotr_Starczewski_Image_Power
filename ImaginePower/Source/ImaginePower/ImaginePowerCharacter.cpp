@@ -251,9 +251,10 @@ void AImaginePowerCharacter::InteractButton()
 {
 	if (bInteractActorInRange)
 	{
-		//Ustawia aktora do interakcji (także użyte w WB_Interaction Menu do referencji)
-		InteractingActor = OutHit.GetActor();
-		IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
+		if (UKismetSystemLibrary::DoesImplementInterface(InteractingActor, UPlayerInteractionInterface::StaticClass()))
+		{
+			IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
+		}
 
 		//Linia do debugowania
 		//DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
@@ -354,7 +355,7 @@ bool AImaginePowerCharacter::EnableTouchscreenMovement(class UInputComponent* Pl
 	return false;
 }
 
-//Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem 
+//Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem		
 bool AImaginePowerCharacter::CalculateInteractRay()
 {
 
@@ -372,13 +373,15 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 			//Sprawdź czy promień dotyka aktora który może interaktować 
 			if (OutHit.bBlockingHit && OutHit.Actor->ActorHasTag(FName("Interactible")))
 			{
-				//Zalicz funkcje przy spełnieniu wszystkich argumentów
-				bInteractActorInRange = true;
+				//Ustawia aktora do interakcji (także użyte w WB_Interaction Menu do referencji)
+				InteractingActor = OutHit.GetActor();
+
 				return (true);
 			}
 		}
 	}
 
-	//Przy braku nien spełnienia któregoś z warunków zakończ funkcje fałszem
+	//Przy braku nien spełnienia któregoś z warunków zakończ funkcje fałszem i zresetuj pointer
+	InteractingActor = nullptr;
 	return (false);
 }

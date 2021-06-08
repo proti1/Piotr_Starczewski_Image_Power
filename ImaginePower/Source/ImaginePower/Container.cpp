@@ -10,7 +10,7 @@ AContainer::AContainer()
 	PrimaryActorTick.bCanEverTick = true;
 
 	//Dodaje tag aby Container był domyśnie gotów
-	this->Tags.Add(FName("Interactible"));
+	this->Tags.Add(FName("NotBusy"));
 }
 
 // Called when the game starts or when spawned
@@ -41,12 +41,12 @@ void AContainer::SetAsBusy(bool bShouldBeBusy)
 	if (bShouldBeBusy)
 	{
 		//Dodaj tag informujący że można interaktować z minionem
-		this->Tags.Remove(FName("Interactible"));
+		this->Tags.Remove(FName("NotBusy"));
 	}
 	else
 	{
 		//Usuń tag informujący że można interaktować z minionem
-		this->Tags.Add(FName("Interactible"));
+		this->Tags.Add(FName("NotBusy"));
 	}
 }
 

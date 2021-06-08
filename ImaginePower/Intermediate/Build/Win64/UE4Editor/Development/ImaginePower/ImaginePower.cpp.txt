@@ -1,2 +1,2 @@
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h
-c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ImaginePower.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePower.h

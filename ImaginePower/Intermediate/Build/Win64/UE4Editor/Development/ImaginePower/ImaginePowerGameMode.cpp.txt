@@ -1,22 +1,22 @@
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\Definitions.ImaginePower.h
-c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ImaginePowerGameMode.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerGameMode.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePowerGameMode.generated.h
-c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ImaginePowerHUD.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerHUD.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePowerHUD.generated.h
-c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\ImaginePowerCharacter.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-c:\projects\piotr_starczewski_imagine_power\imaginepower\source\imaginepower\PlayerInteractionInterface.h
+C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\PlayerInteractionInterface.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\PlayerInteractionInterface.generated.h
 C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Inc\ImaginePower\ImaginePowerCharacter.generated.h
