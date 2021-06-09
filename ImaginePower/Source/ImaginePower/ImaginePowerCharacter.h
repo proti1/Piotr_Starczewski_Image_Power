@@ -166,12 +166,20 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
 	float MaxInteractLength;
 
-	//Obecny aktor w interakcji z graczem
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Parameters")
-	AActor* InteractingActor;
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
+	float MinionSpawnDistance;
 
 	//Z tej klasy będą spawnowane miniony
-	UPROPERTY(EditDefaultsOnly, Category = "Parameters")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
+	int MaxNumberOfMinions;
+
+	//Obecny aktor w interakcji z graczem
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "References")
+	AActor* InteractingActor;
+	
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditDefaultsOnly, Category = "References")
 	TSubclassOf<AActor> MinionClass;
 
 
@@ -193,6 +201,9 @@ private:
 
 	//Właściwości raycastu
 	FCollisionQueryParams CollisionParams;
+
+	//Referencja do ostatniego zespawnowanego miniona
+	AActor* LastSpawnedActor;
 
 	//Czy jest obiekt do interakcji w zasięgu
 	bool bInteractActorInRange;

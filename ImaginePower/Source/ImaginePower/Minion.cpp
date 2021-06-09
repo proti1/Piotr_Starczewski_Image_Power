@@ -40,14 +40,13 @@ void AMinion::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 //Przy wywołaniu interfejsu wypisz na ekranie listę opcji
 void AMinion::OnInteract_Implementation()
 {
-
-	//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("Interakcja %s"), *this->GetName()));
-
 	if (!bIsBusy)
 	{
 		DisplayMenuToPlayer();
+
+		//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
+		//if (GEngine)
+		//	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Blue, FString::Printf(TEXT("Interakcja %s"), *this->GetName()));
 	}
 }
 

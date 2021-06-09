@@ -47,7 +47,9 @@ void EmptyLinkFunctionForGeneratedCodePlayerInteractionInterface() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Player Interaction" },
+		{ "Comment", "//Ffunkcja do interakcji\n" },
 		{ "ModuleRelativePath", "PlayerInteractionInterface.h" },
+		{ "ToolTip", "Ffunkcja do interakcji" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UPlayerInteractionInterface, nullptr, "OnInteract", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract_Statics::Function_MetaDataParams)) };
@@ -79,7 +81,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerInteractionInterface() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ImaginePower,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UPlayerInteractionInterface_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract, "OnInteract" }, // 2520826561
+		{ &Z_Construct_UFunction_UPlayerInteractionInterface_OnInteract, "OnInteract" }, // 1074827498
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UPlayerInteractionInterface_Statics::Class_MetaDataParams[] = {
@@ -113,7 +115,7 @@ void EmptyLinkFunctionForGeneratedCodePlayerInteractionInterface() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UPlayerInteractionInterface, 1207463887);
+	IMPLEMENT_CLASS(UPlayerInteractionInterface, 3101217212);
 	template<> IMAGINEPOWER_API UClass* StaticClass<UPlayerInteractionInterface>()
 	{
 		return UPlayerInteractionInterface::StaticClass();

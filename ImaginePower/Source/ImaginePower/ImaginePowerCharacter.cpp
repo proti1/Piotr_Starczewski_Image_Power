@@ -89,6 +89,9 @@ AImaginePowerCharacter::AImaginePowerCharacter()
 
 	//Domyślnie zezwala na interakcję
 	bCanInteract = true;
+
+	//Domyślna maksymalna ilość minionów do zespawnowania
+	MaxNumberOfMinions = 5;
 }
 
 void AImaginePowerCharacter::BeginPlay()
@@ -121,6 +124,9 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 		InteractingActor = OutHit.GetActor();
 
 		bInteractActorInRange = true;
+
+		//if (GEngine)
+		// 	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %s"), InteractingActor->GetName()));
 	}
 	else
 	{
@@ -356,39 +362,11 @@ void AImaginePowerCharacter::InteractButton()
 //Po wciśnięciu przycisku zespawnuj kolejnego miniona
 void AImaginePowerCharacter::SpecialButton()
 {
-
-	//if (SpawnedMinions.Num() < 5)
-	//{
-		//AActor* CreatedMinion = UWorld::SpawnActor()
-	//	SpawnedMinions.Add(NewMinion)
-	//}
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
+	//Zespawnuj miniona
 	SpawnMinion();
-}
 
-//Wylicz i zespawnuj miniona obok gracza
-void AImaginePowerCharacter::SpawnMinion()
-{
-	if (MinionClass.Get())
-	{
-		/*
-		//Ustaw klasę miniona do zespawnowania
-		ConstructorHelpers::FObjectFinder<UBlueprint> MinionBlueprint(TEXT("Blueprint'/Game/Characters/Minion/BP_Minion'"));
-
-		FRotator SpawnRot = GetActorRotation();
-		FVector SpawnLoc = SpawnRot.RotateVector(FVector(700.f, 0.f, 0.f));
-		SpawnLoc += GetActorLocation();
-
-		//MinionClass = (UClass*)MinionBlueprint.Object->GeneratedClass;
-		FActorSpawnParameters SpawnParams;
-		SpawnParams =
-		GetWorld()->SpawnActor(MinionBlueprint*, , &SpawnLoc, &SpawnRot);
-		*/
-	}
-	FActorSpawnParameters SpawnParams;
-	GetWorld()->SpawnActor<AActor>(MinionClass, GetActorLocation(), GetActorRotation(), SpawnParams);
-
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
 }
 
 //Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem		
@@ -409,6 +387,7 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 			//Sprawdź czy promień dotyka aktora który może interaktować 
 			if (OutHit.bBlockingHit && OutHit.Actor->ActorHasTag(FName("Interactible")))
 			{
+
 				return (true);
 			}
 		}
@@ -416,4 +395,46 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 
 	//Przy braku nien spełnienia któregoś z warunków zakończ funkcje fałszem
 	return (false);
+}
+
+//Wylicz i zespawnuj miniona obok gracza
+void AImaginePowerCharacter::SpawnMinion()
+{
+	//Sprawdź ilość zespawnowanych minionów
+	if (SpawnedMinions.Num() < MaxNumberOfMinions)
+	{
+		FActorSpawnParameters SpawnParams;
+		FRotator SpawnRotation = GetActorRotation();
+
+		//Spróbuj spawn, jeśli zawiedzie zmień lokację spawnu i spróbuj ponownie
+		for (int i = 0; i < 8; i++)
+		{
+			//Zainicjalizuj wektor do spawnu
+			FVector SpawnLocation = GetCapsuleComponent()->GetForwardVector() * MinionSpawnDistance;
+
+			//Kąt zwiększający się z każdą pętlą o 45 stopni
+			FRotator RotationAngle = FRotator(0.0f, i * 45.0f - 90.0f, 0.0f);
+
+			//Obróć wektor o kąt i zmien go z lokalnego na absolutny
+			SpawnLocation = RotationAngle.RotateVector(SpawnLocation);
+			SpawnLocation += GetActorLocation();
+
+			//Spawn miniona
+			LastSpawnedActor = (GetWorld()->SpawnActor<AActor>(MinionClass, SpawnLocation, SpawnRotation, SpawnParams));
+
+			//Jeśli zespawnował miniona wypisz
+			if (LastSpawnedActor != nullptr)
+			{
+				SpawnedMinions.Add(LastSpawnedActor);
+				break;
+			}
+		}
+	}
+	else
+	{
+		//Przy za dużej liczbie minioinów, wypisz obecną liczbę jako błąd
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, FString::Printf(TEXT("Number of minions is already: %d"), SpawnedMinions.Num()));
+	}
+
 }

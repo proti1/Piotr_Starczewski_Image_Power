@@ -88,6 +88,14 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_InteractingActor;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxNumberOfMinions_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_MaxNumberOfMinions;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MinionSpawnDistance_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MinionSpawnDistance;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxInteractLength_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxInteractLength;
@@ -173,7 +181,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionClass_MetaData[] = {
-		{ "Category", "Parameters" },
+		{ "Category", "References" },
 		{ "Comment", "//Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony\n" },
 		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
 		{ "ToolTip", "Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony" },
@@ -182,13 +190,31 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionClass = { "MinionClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, MinionClass), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionClass_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData[] = {
-		{ "Category", "Parameters" },
+		{ "Category", "References" },
 		{ "Comment", "//Obecny aktor w interakcji z graczem\n" },
 		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
 		{ "ToolTip", "Obecny aktor w interakcji z graczem" },
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor = { "InteractingActor", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, InteractingActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions_MetaData[] = {
+		{ "Category", "Parameters" },
+		{ "Comment", "//Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony\n" },
+		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
+		{ "ToolTip", "Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions = { "MaxNumberOfMinions", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, MaxNumberOfMinions), METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance_MetaData[] = {
+		{ "Category", "Parameters" },
+		{ "Comment", "//Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony\n" },
+		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
+		{ "ToolTip", "Z tej klasy b\xc4\x99""d\xc4\x85 spawnowane miniony" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance = { "MinionSpawnDistance", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, MinionSpawnDistance), METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength_MetaData[] = {
 		{ "Category", "Parameters" },
@@ -351,6 +377,8 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AImaginePowerCharacter_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_InteractingActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_FireAnimation,
@@ -398,7 +426,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AImaginePowerCharacter, 1313085544);
+	IMPLEMENT_CLASS(AImaginePowerCharacter, 1617400094);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AImaginePowerCharacter>()
 	{
 		return AImaginePowerCharacter::StaticClass();
