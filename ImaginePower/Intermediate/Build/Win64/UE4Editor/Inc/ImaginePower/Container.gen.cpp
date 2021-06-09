@@ -59,9 +59,9 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AContainer_PickUp_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Interface" },
-		{ "Comment", "//Zdefiniuj funkcj\xc4\x99 interfejsu IPlayerInteractionInterface\n" },
+		{ "Comment", "//Zdefiniuj funkcj\xc4\x99 interfejsu IMInionInterface\n" },
 		{ "ModuleRelativePath", "Container.h" },
-		{ "ToolTip", "Zdefiniuj funkcj\xc4\x99 interfejsu IPlayerInteractionInterface" },
+		{ "ToolTip", "Zdefiniuj funkcj\xc4\x99 interfejsu IMInionInterface" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AContainer_PickUp_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AContainer, nullptr, "PickUp", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AContainer_PickUp_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AContainer_PickUp_Statics::Function_MetaDataParams)) };
@@ -99,9 +99,9 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AContainer_SetAsBusy_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Logic" },
-		{ "Comment", "//Funkcja do zablokowania \n" },
+		{ "Comment", "//Funkcja do zablokowania itemu\n" },
 		{ "ModuleRelativePath", "Container.h" },
-		{ "ToolTip", "Funkcja do zablokowania" },
+		{ "ToolTip", "Funkcja do zablokowania itemu" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AContainer_SetAsBusy_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AContainer, nullptr, "SetAsBusy", nullptr, nullptr, sizeof(Container_eventSetAsBusy_Parms), Z_Construct_UFunction_AContainer_SetAsBusy_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AContainer_SetAsBusy_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AContainer_SetAsBusy_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AContainer_SetAsBusy_Statics::Function_MetaDataParams)) };
@@ -126,6 +126,11 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bIsBusy_MetaData[];
+#endif
+		static void NewProp_bIsBusy_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bIsBusy;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_NeededObject_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FEnumPropertyParams NewProp_NeededObject;
@@ -140,8 +145,8 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_ImaginePower,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AContainer_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AContainer_PickUp, "PickUp" }, // 1593588446
-		{ &Z_Construct_UFunction_AContainer_SetAsBusy, "SetAsBusy" }, // 1170394655
+		{ &Z_Construct_UFunction_AContainer_PickUp, "PickUp" }, // 3362063421
+		{ &Z_Construct_UFunction_AContainer_SetAsBusy, "SetAsBusy" }, // 4051780088
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::Class_MetaDataParams[] = {
@@ -149,6 +154,19 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		{ "ModuleRelativePath", "Container.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_MetaData[] = {
+		{ "Category", "Logic" },
+		{ "Comment", "//Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektiem kiedy jest \"zaklepany\" przez innego aktora\n" },
+		{ "ModuleRelativePath", "Container.h" },
+		{ "ToolTip", "Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektiem kiedy jest \"zaklepany\" przez innego aktora" },
+	};
+#endif
+	void Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_SetBit(void* Obj)
+	{
+		((AContainer*)Obj)->bIsBusy = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy = { "bIsBusy", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AContainer), &Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_SetBit, METADATA_PARAMS(Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData[] = {
 		{ "Category", "Container" },
@@ -160,6 +178,7 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 	const UE4CodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject = { "NeededObject", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AContainer, NeededObject), Z_Construct_UEnum_ImaginePower_EObjectList, METADATA_PARAMS(Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_MetaData)) };
 	const UE4CodeGen_Private::FBytePropertyParams Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UE4CodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AContainer_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AContainer_Statics::NewProp_NeededObject_Underlying,
 	};
@@ -193,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AContainer, 680393265);
+	IMPLEMENT_CLASS(AContainer, 3218733448);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AContainer>()
 	{
 		return AContainer::StaticClass();

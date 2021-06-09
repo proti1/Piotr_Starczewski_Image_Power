@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
+#include "Blueprint/UserWidget.h" //Do tworzenia widgetów
 #include "ImaginePowerCharacter.generated.h"
 
 class UInputComponent;
@@ -48,6 +49,10 @@ class AImaginePowerCharacter : public ACharacter, public IPlayerInteractionInter
 
 public:
 	AImaginePowerCharacter();
+
+	//Funkcja do kalkulowania promienia
+	UFUNCTION(BlueprintCallable)
+	void SpawnMinion();
 
 protected:
 	virtual void BeginPlay();
@@ -157,22 +162,38 @@ public:
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
 
+	//Widget informujący o możliwości interakcji
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
+	TSubclassOf<class UUserWidget> StatusInteractionWidget;
+
+	//Referencja do widgeta
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget")
+	UUserWidget* StatusInteractionWidgetRef;
 
 	//Maksymalna długość interakcji w Unreal Units
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Camera)
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
 	float MaxInteractLength;
 
-	//Maksymalna długość interakcji w Unreal Units
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Default)
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
+	float MinionSpawnDistance;
+
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
+	int MaxNumberOfMinions;
+
+	//Obecny aktor w interakcji z graczem
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "References")
 	AActor* InteractingActor;
+	
+	//Z tej klasy będą spawnowane miniony
+	UPROPERTY(EditDefaultsOnly, Category = "References")
+	TSubclassOf<AActor> MinionClass;
+
 
 private:
-
-	//Czy jest obiekt do interakcji w zasięgu
-	bool bInteractActorInRange;
-
-	//Blokada możliwości interakcji
-	bool bCanInteract;
+	//Przetrzymóje zespawnowane miniony
+	TArray<AActor*> SpawnedMinions;
 
 	//Tworzenie wektora dystansu kamery
 	FVector CameraLocation;
@@ -185,5 +206,19 @@ private:
 
 	//Właściwości raycastu
 	FCollisionQueryParams CollisionParams;
+
+	//Referencja do ostatniego zespawnowanego miniona
+	AActor* LastSpawnedActor;
+
+	//Referencja do kontrolera
+	APlayerController* MyController;
+
+	//Czy jest obiekt do interakcji w zasięgu
+	bool bInteractActorInRange;
+
+	//Blokada możliwości interakcji
+	bool bCanInteract;
+
+
 };
 

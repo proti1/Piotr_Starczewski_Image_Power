@@ -84,12 +84,14 @@ AImaginePowerCharacter::AImaginePowerCharacter()
 	// Uncomment the following line to turn motion controllers on by default:
 	//bUsingMotionControllers = true;
 
-
 	//Domyślna maksymalna odległość interakcji
 	MaxInteractLength = 300.0f;
 
 	//Domyślnie zezwala na interakcję
 	bCanInteract = true;
+
+	//Domyślna maksymalna ilość minionów do zespawnowania
+	MaxNumberOfMinions = 5;
 }
 
 void AImaginePowerCharacter::BeginPlay()
@@ -111,6 +113,9 @@ void AImaginePowerCharacter::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	//Zinicjuj referencje do kontrolera gracza
+	MyController = GWorld->GetFirstPlayerController();
 }
 
 void AImaginePowerCharacter::Tick(float DeltaTime)
@@ -122,6 +127,23 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 		InteractingActor = OutHit.GetActor();
 
 		bInteractActorInRange = true;
+
+		//Jeśli widget jest ustawiony, wywołaj go
+		if (StatusInteractionWidget != nullptr)
+		{
+			if (StatusInteractionWidgetRef == nullptr)
+			{
+				StatusInteractionWidgetRef = CreateWidget<UUserWidget>(MyController, StatusInteractionWidget);
+				if (StatusInteractionWidgetRef != nullptr)
+				{
+					//Dodaj do viewportu widget o możliwości interakcji
+					StatusInteractionWidgetRef->AddToViewport();
+				}
+			}
+		}
+
+		//if (GEngine)
+		// 	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %s"), InteractingActor->GetName()));
 	}
 	else
 	{
@@ -129,13 +151,20 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 
 		//Zresetuj pointer po skończonej interakcji
 		InteractingActor = nullptr;
+
+		if(StatusInteractionWidgetRef)
+		{
+			//Dodaj do viewportu widget o możliwości interakcji
+			StatusInteractionWidgetRef->RemoveFromParent();
+			StatusInteractionWidgetRef->RemoveFromViewport();
+			StatusInteractionWidgetRef = nullptr;
+		}
 	}
 
 	//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
 }
-
 
 
 //////////////////////////////////////////////////////////////////////////
@@ -338,15 +367,14 @@ bool AImaginePowerCharacter::EnableTouchscreenMovement(class UInputComponent* Pl
 //Podczas interakcji użyj interfejsu UPlayerInteractionInterface do wykonywania czynności
 void AImaginePowerCharacter::InteractButton()
 {
-	if (bInteractActorInRange)
+	if (bInteractActorInRange && InteractingActor != nullptr)
 	{
 		//Jeśli interfejs istnieje, zatrzymaj gracza i zacznij interakcję
 		if (UKismetSystemLibrary::DoesImplementInterface(InteractingActor, UPlayerInteractionInterface::StaticClass()))
 		{
-			this->GetController()->SetIgnoreMoveInput(true);
-			this->GetVelocity() = FVector(0.f);
 			IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
 		}
+
 
 		//Linia do debugowania
 		//DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
@@ -357,16 +385,19 @@ void AImaginePowerCharacter::InteractButton()
 	}
 }
 
+//Po wciśnięciu przycisku zespawnuj kolejnego miniona
 void AImaginePowerCharacter::SpecialButton()
 {
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
+	//Zespawnuj miniona
+	SpawnMinion();
+
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, TEXT("SpecialButton"));
 }
 
 //Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem		
 bool AImaginePowerCharacter::CalculateInteractRay()
 {
-
 	if (bCanInteract)
 	{
 		//Ustawianie wektora lokacji kamery
@@ -388,4 +419,46 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 
 	//Przy braku nien spełnienia któregoś z warunków zakończ funkcje fałszem
 	return (false);
+}
+
+//Wylicz i zespawnuj miniona obok gracza
+void AImaginePowerCharacter::SpawnMinion()
+{
+	//Sprawdź ilość zespawnowanych minionów
+	if (SpawnedMinions.Num() < MaxNumberOfMinions)
+	{
+		FActorSpawnParameters SpawnParams;
+		FRotator SpawnRotation = GetActorRotation();
+
+		//Spróbuj spawn, jeśli zawiedzie zmień lokację spawnu i spróbuj ponownie
+		for (int i = 0; i < 8; i++)
+		{
+			//Zainicjalizuj wektor do spawnu
+			FVector SpawnLocation = GetCapsuleComponent()->GetForwardVector() * MinionSpawnDistance;
+
+			//Kąt zwiększający się z każdą pętlą o 45 stopni
+			FRotator RotationAngle = FRotator(0.0f, i * 45.0f - 90.0f, 0.0f);
+
+			//Obróć wektor o kąt i zmien go z lokalnego na absolutny
+			SpawnLocation = RotationAngle.RotateVector(SpawnLocation);
+			SpawnLocation += GetActorLocation();
+
+			//Spawn miniona
+			LastSpawnedActor = (GetWorld()->SpawnActor<AActor>(MinionClass, SpawnLocation, SpawnRotation, SpawnParams));
+
+			//Jeśli zespawnował miniona wypisz
+			if (LastSpawnedActor != nullptr)
+			{
+				SpawnedMinions.Add(LastSpawnedActor);
+				break;
+			}
+		}
+	}
+	else
+	{
+		//Przy za dużej liczbie minioinów, wypisz obecną liczbę jako błąd
+		if (GEngine)
+			GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Yellow, FString::Printf(TEXT("Number of minions is already: %d"), SpawnedMinions.Num()));
+	}
+
 }

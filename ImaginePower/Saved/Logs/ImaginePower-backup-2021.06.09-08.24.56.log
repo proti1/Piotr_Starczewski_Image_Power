@@ -1,0 +1,1100 @@
+﻿Log file open, 06/09/21 09:46:10
+LogInit: Display: Running engine for game: ImaginePower
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.270929
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +1:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin PythonScriptPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MegascansPlugin
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin DatabaseSupport
+LogPluginManager: Mounting plugin SQLiteCore
+LogPluginManager: Mounting plugin SQLiteSupport
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line:  -skipcompile
+LogInit: Base Directory: C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.06.09-07.46.11:340][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.06.09-07.46.11:340][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.06.09-07.46.11:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:340][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.06.09-07.46.11:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:340][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:340][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.06.09-07.46.11:341][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.06.09-07.46.11:342][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.06.09-07.46.11:342][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:342][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:345][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:345][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.09-07.46.11:345][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.06.09-07.46.11:345][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:345][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.06.09-07.46.11:345][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.06.09-07.46.11:346][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.09-07.46.11:347][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.06.09-07.46.11:348][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.06.09-07.46.11:349][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.09-07.46.11:349][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.06.09-07.46.11:349][  0]LogHAL: Display: Platform has ~ 16 GB [17012580352 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.06.09-07.46.11:349][  0]LogInit: Going up to parent DeviceProfile []
+[2021.06.09-07.46.11:349][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:10.0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@0] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:0]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.06.09-07.46.11:349][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:4096]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:4096]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:4]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:16]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:4]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:1000]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.LensFlareQuality:3]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.06.09-07.46.11:350][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:1       ; bokeh simulation when gathering]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:5                 ; high number of samples when gathering]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; background scattering occlusion]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; no bokeh simulation when scattering]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.25        ; only a maximum of 10% of scattered bokeh]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:2                ; highest slight out of focus]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:1    ; bokeh simulation on slight out of focus]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Applying CVar settings from Section [TextureQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.06.09-07.46.11:351][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:3000]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSR.Quality:4]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SSGI.Quality:4]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:2]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:32.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:8.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:30.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:20.0]]
+[2021.06.09-07.46.11:352][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@Cine] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Scalability.ini]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:64]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:32]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.06.09-07.46.11:353][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Config/Windows/Engine.ini]
+[2021.06.09-07.46.11:353][  0]LogInit: Computer: WINDOWSSALAMI
+[2021.06.09-07.46.11:353][  0]LogInit: User: Proti
+[2021.06.09-07.46.11:353][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.06.09-07.46.11:353][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.06.09-07.46.11:354][  0]LogMemory: Memory total: Physical=15.8GB (16GB approx)
+[2021.06.09-07.46.11:354][  0]LogMemory: Platform Memory Stats for Windows
+[2021.06.09-07.46.11:354][  0]LogMemory: Process Physical Memory: 121.54 MB used, 121.55 MB peak
+[2021.06.09-07.46.11:354][  0]LogMemory: Process Virtual Memory: 100.39 MB used, 100.39 MB peak
+[2021.06.09-07.46.11:354][  0]LogMemory: Physical Memory: 10641.90 MB used,  5582.56 MB free, 16224.46 MB total
+[2021.06.09-07.46.11:354][  0]LogMemory: Virtual Memory: 5174.58 MB used,  134212552.00 MB free, 134217728.00 MB total
+[2021.06.09-07.46.11:360][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.06.09-07.46.11:525][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.06.09-07.46.11:526][  0]LogInit: Using OS detected language (en-US).
+[2021.06.09-07.46.11:526][  0]LogInit: Using OS detected locale (en-AT).
+[2021.06.09-07.46.11:532][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.06.09-07.46.11:657][  0]LogInit: Setting process to per monitor DPI aware
+[2021.06.09-07.46.11:713][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.06.09-07.46.11:713][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.06.09-07.46.11:838][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.06.09-07.46.11:838][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.06.09-07.46.11:838][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.06.09-07.46.11:838][  0]LogD3D11RHI: D3D11 adapters:
+[2021.06.09-07.46.11:963][  0]LogD3D11RHI:    0. 'NVIDIA GeForce RTX 2060' (Feature Level 11_0)
+[2021.06.09-07.46.11:963][  0]LogD3D11RHI:       5980/0/8112 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.06.09-07.46.11:998][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2021.06.09-07.46.11:998][  0]LogD3D11RHI:       128/0/8112 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.06.09-07.46.12:002][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.06.09-07.46.12:002][  0]LogD3D11RHI:       0/0/8112 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.06.09-07.46.12:002][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.06.09-07.46.12:008][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.06.09-07.46.12:008][  0]LogD3D11RHI:     GPU DeviceId: 0x1f11 (for the marketing name, search the web for "GPU Device Id")
+[2021.06.09-07.46.12:008][  0]LogWindows: EnumDisplayDevices:
+[2021.06.09-07.46.12:008][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2021.06.09-07.46.12:008][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.06.09-07.46.12:009][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.06.09-07.46.12:009][  0]LogWindows:    3. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.06.09-07.46.12:009][  0]LogWindows:    4. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.06.09-07.46.12:010][  0]LogWindows:    5. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.06.09-07.46.12:010][  0]LogWindows:    6. 'NVIDIA GeForce RTX 2060' (P:0 D:0)
+[2021.06.09-07.46.12:010][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter FoundDriverCount:4 
+[2021.06.09-07.46.12:010][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce RTX 2060
+[2021.06.09-07.46.12:010][  0]LogD3D11RHI:   Driver Version: 465.89 (internal:27.21.14.6589, unified:465.89)
+[2021.06.09-07.46.12:010][  0]LogD3D11RHI:      Driver Date: 3-25-2021
+[2021.06.09-07.46.12:010][  0]LogRHI: Texture pool is 4186 MB (70% of 5980 MB)
+[2021.06.09-07.46.12:085][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.06.09-07.46.12:085][  0]LogD3D11RHI: Async texture creation enabled
+[2021.06.09-07.46.12:085][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.06.09-07.46.12:098][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.06.09-07.46.12:328][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.06.09-07.46.12:352][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.06.09-07.46.12:352][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.06.09-07.46.12:352][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.06.09-07.46.12:352][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.06.09-07.46.12:352][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.06.09-07.46.12:353][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.06.09-07.46.12:353][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.06.09-07.46.12:353][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.06.09-07.46.12:353][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.06.09-07.46.12:353][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.06.09-07.46.12:388][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.06.09-07.46.12:388][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.06.09-07.46.12:398][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.06.09-07.46.12:406][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.06.09-07.46.12:416][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.06.09-07.46.12:425][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.06.09-07.46.12:434][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.06.09-07.46.12:443][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.06.09-07.46.12:452][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.06.09-07.46.12:474][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.06.09-07.46.12:474][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.06.09-07.46.12:489][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.06.09-07.46.12:489][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.06.09-07.46.12:498][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.06.09-07.46.12:506][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.06.09-07.46.12:515][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.06.09-07.46.12:523][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.06.09-07.46.12:524][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.06.09-07.46.12:534][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.06.09-07.46.12:607][  0]LogShaderCompilers: Guid format shader working directory is -25 characters bigger than the processId version (../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Intermediate/Shaders/WorkingDirectory/2964/).
+[2021.06.09-07.46.12:607][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Proti/AppData/Local/Temp/UnrealShaderWorkingDir/0ECA01A84B1A37C5BBA406A901BD71E9/'.
+[2021.06.09-07.46.12:608][  0]LogXGEController: Cleaning working directory: C:/Users/Proti/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2021.06.09-07.46.12:608][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.06.09-07.46.12:608][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.06.09-07.46.12:608][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.06.09-07.46.13:253][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.06.09-07.46.13:292][  0]LogDerivedDataCache: Loaded boot cache 0.04s 79MB C:/Users/Proti/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.06.09-07.46.13:293][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Proti/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.06.09-07.46.13:293][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.06.09-07.46.13:293][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.06.09-07.46.13:293][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.09-07.46.13:293][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.06.09-07.46.13:302][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.06.09-07.46.13:302][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.06.09-07.46.13:303][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.06.09-07.46.13:305][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Proti/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.06.09-07.46.13:305][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.06.09-07.46.13:305][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.06.09-07.46.13:349][  0]LogSlate: Using FreeType 2.10.0
+[2021.06.09-07.46.13:349][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.06.09-07.46.13:376][  0]LogAssetRegistry: FAssetRegistry took 0.0042 seconds to start up
+[2021.06.09-07.46.13:564][  0]LogInit: Selected Device Profile: [Windows]
+[2021.06.09-07.46.13:679][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.06.09-07.46.13:679][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.06.09-07.46.13:679][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.06.09-07.46.13:680][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.06.09-07.46.13:680][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.06.09-07.46.13:693][  0]LogNetVersion: ImaginePower 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 3019717282)
+[2021.06.09-07.46.14:036][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000025E05691BC0), frame # 0
+[2021.06.09-07.46.14:036][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025E05608A40), frame # 0
+[2021.06.09-07.46.14:037][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025E0564C800), frame # 0
+[2021.06.09-07.46.14:066][  0]LogPackageLocalizationCache: Processed 21 localized package path(s) for 1 prioritized culture(s) in 0.023163 seconds
+[2021.06.09-07.46.14:070][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.06.09-07.46.14:070][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.06.09-07.46.14:070][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.06.09-07.46.14:333][  0]LogPython: Using Python 2.7.14
+[2021.06.09-07.46.15:106][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.06.09-07.46.15:111][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.06.09-07.46.15:427][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.15:427][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.15:431][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.15:435][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.15:442][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.15:777][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.06.09-07.46.15:811][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.09-07.46.15:811][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.06.09-07.46.15:899][  0]LogOcInput: OculusInput pre-init called
+[2021.06.09-07.46.15:918][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.06.09-07.46.15:918][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.06.09-07.46.16:265][  0]LogEngine: Initializing Engine...
+[2021.06.09-07.46.16:266][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.06.09-07.46.16:266][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.06.09-07.46.16:266][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.06.09-07.46.16:362][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.06.09-07.46.16:371][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.06.09-07.46.16:371][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025E10FEBC00), frame # 0
+[2021.06.09-07.46.16:371][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025E1101EE80), frame # 0
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.09-07.46.16:385][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.09-07.46.16:385][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.09-07.46.16:386][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.09-07.46.16:386][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.09-07.46.16:407][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.09-07.46.16:408][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.06.09-07.46.16:443][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.06.09-07.46.16:446][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.09-07.46.16:448][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.09-07.46.16:448][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.09-07.46.16:449][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.09-07.46.16:451][  0]LogInit: FAudioDevice initialized.
+[2021.06.09-07.46.16:451][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.06.09-07.46.16:491][  0]LogDerivedDataCache: Saved boot cache 0.04s 79MB C:/Users/Proti/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.06.09-07.46.16:494][  0]LogInit: Texture streaming: Enabled
+[2021.06.09-07.46.16:514][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.06.09-07.46.16:514][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.06.09-07.46.16:515][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.06.09-07.46.16:550][  0]LogInit: Transaction tracking system initialized
+[2021.06.09-07.46.16:574][  0]BlueprintLog: New page: Editor Load
+[2021.06.09-07.46.16:654][  0]LocalizationService: Localization service is disabled
+[2021.06.09-07.46.16:810][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.06.09-07.46.16:810][  0]LogCook: Display: Mobile HDR setting 1
+[2021.06.09-07.46.16:973][  0]LogFileCache: Scanning file cache for directory 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/' took 0.00s
+[2021.06.09-07.46.17:157][  0]SourceControl: Source control is disabled
+[2021.06.09-07.46.17:157][  0]LogUnrealEdMisc: Loading editor; pre map load, took 7.306
+[2021.06.09-07.46.17:157][  0]Cmd: MAP LOAD FILE="../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.06.09-07.46.17:158][  0]LightingResults: New page: Lighting Build
+[2021.06.09-07.46.17:159][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.06.09-07.46.17:159][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.09-07.46.17:159][  0]MapCheck: New page: Map Check
+[2021.06.09-07.46.17:159][  0]LightingResults: New page: Lighting Build
+[2021.06.09-07.46.17:170][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025E10FEBC00), frame # 0
+[2021.06.09-07.46.17:170][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025E1101EE80), frame # 0
+[2021.06.09-07.46.17:172][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.06.09-07.46.17:221][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.06.09-07.46.17:221][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025E1EFAFE00), frame # 0
+[2021.06.09-07.46.17:221][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025E0F931E40), frame # 0
+[2021.06.09-07.46.17:235][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.06.09-07.46.17:251][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.74ms
+[2021.06.09-07.46.17:251][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.06.09-07.46.17:252][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0,197ms to complete.
+[2021.06.09-07.46.17:252][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.095
+[2021.06.09-07.46.17:254][  0]LogUnrealEdMisc: Total Editor Startup Time, took 7.403
+[2021.06.09-07.46.17:363][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.17:369][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.17:376][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.17:381][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.17:388][  0]LogCollectionManager: Loaded 0 collections in 0.001191 seconds
+[2021.06.09-07.46.17:404][  0]LogFileCache: Scanning file cache for directory 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/Collections/' took 0.00s
+[2021.06.09-07.46.17:404][  0]LogFileCache: Scanning file cache for directory 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/Developers/Proti/Collections/' took 0.00s
+[2021.06.09-07.46.17:404][  0]LogFileCache: Scanning file cache for directory 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/Collections/' took 0.00s
+[2021.06.09-07.46.17:404][  0]LogContentBrowser: Native class hierarchy populated in 0.0080 seconds. Added 3455 classes and 830 folders.
+[2021.06.09-07.46.17:408][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.06.09-07.46.17:457][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.06.09-07.46.17:463][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2021.06.09-07.46.17:574][  0]LogSlate: Took 0.000164 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.06.09-07.46.17:576][  0]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.06.09-07.46.17:580][  0]LogSlate: Took 0.000160 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.06.09-07.46.17:636][  0]LogRenderer: Reallocating scene render targets to support 1096x576 Format 10 NumSamples 1 (Frame:1).
+[2021.06.09-07.46.17:763][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2021.06.09-07.46.17:763][  0]LogLoad: (Engine Initialization) Total time: 7.91 seconds
+[2021.06.09-07.46.17:763][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.06.09-07.46.17:832][  0]LogAssetRegistry: Asset discovery search completed in 4.4596 seconds
+[2021.06.09-07.46.17:836][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.06.09-07.46.17:838][  0]LogContentStreaming: Texture pool size now 3000 MB
+[2021.06.09-07.46.17:888][  0]LogSlate: Took 0.000133 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.06.09-07.46.21:542][214]LogTemp: Repeating last play command: Selected Viewport
+[2021.06.09-07.46.21:553][214]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.09-07.46.21:553][214]PIE: New page: PIE session: FirstPersonExampleMap (9 Jun 2021, 11:46:21)
+[2021.06.09-07.46.21:555][214]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.06.09-07.46.21:557][214]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.06.09-07.46.21:557][214]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.06.09-07.46.21:568][214]LogPlayLevel: PIE: StaticDuplicateObject took: (0.011278s)
+[2021.06.09-07.46.21:569][214]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2021.06.09-07.46.21:569][214]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000025E32152400), frame # 214
+[2021.06.09-07.46.21:570][214]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000025E2FBD9E40), frame # 214
+[2021.06.09-07.46.21:570][214]LogPlayLevel: PIE: World Init took: (0.001401s)
+[2021.06.09-07.46.21:570][214]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/FirstPersonCPP/Maps/FirstPersonExampleMap.FirstPersonExampleMap to /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap (0.013148s)
+[2021.06.09-07.46.21:582][214]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.06.09-07.46.21:584][214]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.06.09-07.46.21:585][214]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.06.09-07.46.21:585][214]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.06.09-07.46.21:585][214]LogAudio: Display: Using built-in audio occlusion.
+[2021.06.09-07.46.21:585][214]LogAudioMixer: Display: Initializing audio mixer.
+[2021.06.09-07.46.21:587][214]LogAudioMixer: Display: 0: FrontLeft
+[2021.06.09-07.46.21:587][214]LogAudioMixer: Display: 1: FrontRight
+[2021.06.09-07.46.21:607][214]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.06.09-07.46.21:608][214]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.06.09-07.46.21:608][214]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.06.09-07.46.21:608][214]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.06.09-07.46.21:608][214]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.06.09-07.46.21:621][214]LogInit: FAudioDevice initialized.
+[2021.06.09-07.46.21:633][214]LogLoad: Game class is 'ImaginePowerGameMode'
+[2021.06.09-07.46.21:635][214]LogWorld: Bringing World /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap.FirstPersonExampleMap up for play (max tick rate 60) at 2021.06.09-09.46.21
+[2021.06.09-07.46.21:636][214]LogWorld: Bringing up level for play took: 0.001696
+[2021.06.09-07.46.21:636][214]LogOnline: OSS: Creating online subsystem instance for: :Context_3
+[2021.06.09-07.46.21:639][214]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
+[2021.06.09-07.46.21:640][214]PIE: Server logged in
+[2021.06.09-07.46.21:641][214]PIE: Play in editor total start time 0,089 seconds.
+[2021.06.09-07.46.45:350][633]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.45:351][633]LogWorld: BeginTearingDown for /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap
+[2021.06.09-07.46.45:351][633]LogWorld: UWorld::CleanupWorld for FirstPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.06.09-07.46.45:352][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.09-07.46.45:374][633]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.06.09-07.46.45:377][633]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.09-07.46.45:429][633]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.06.09-07.46.45:430][633]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000025E2FBD9E40), frame # 1633
+[2021.06.09-07.46.45:430][633]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000025E32152400), frame # 1633
+[2021.06.09-07.46.45:431][633]LogUObjectHash: Compacting FUObjectHashTables data took   0.59ms
+[2021.06.09-07.46.45:453][634]LogPlayLevel: Display: Destroying online subsystem :Context_3
+[2021.06.09-07.49.50:193][621]LogSlate: Took 0.000209 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.06.09-07.49.50:207][621]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/ImaginePower.Container
+[2021.06.09-07.49.50:528][621]LogVSAccessor: Warning: Couldn't goto line number '1' in 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Source/ImaginePower/Container.cpp'
+[2021.06.09-07.51.52:289][291]LogSlate: WidgetSwitcher ('None') active index changed to -1
+[2021.06.09-07.51.52:290][291]LogSlate: WidgetSwitcher ('None') active index changed to 0
+[2021.06.09-07.51.52:311][291]LogSlate: Took 0.000717 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.06.09-07.52.09:412][312]LogSlate: WidgetSwitcher ('None') active index changed to 1
+[2021.06.09-07.52.51:007][808]LogSlate: Window 'Add C++ Class' being destroyed
+[2021.06.09-07.53.05:494][332]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/ImaginePower.ImaginePowerCharacter
+[2021.06.09-07.53.05:724][332]LogVSAccessor: Warning: Couldn't goto line number '1' in 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Source/ImaginePower/ImaginePowerCharacter.cpp'
+[2021.06.09-07.53.57:394][540]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/ImaginePower.Minion
+[2021.06.09-07.53.57:558][540]LogVSAccessor: Warning: Couldn't goto line number '1' in 'C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Source/ImaginePower/Minion.h'
+[2021.06.09-07.55.06:921][256]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/HUD/WB_InteractionStatusDisplay.WB_InteractionStatusDisplay
+[2021.06.09-07.55.07:109][256]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 125 classes and 0 folders.
+[2021.06.09-07.55.08:395][256]LogSlate: Took 0.000717 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.06.09-07.55.28:677][397]LogHttp: Warning: 0000025ED7736B00: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BE8678A83-42E2-DB91-35A7-679DE7BF61B8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=3f1707cc46f67a8ec3c05dba81ae25fa%7Cfbc9a29351c042fbafd16034f9817105%7Cb15b6e19-eb6d-406d-8eea-fa0e3a4d10a6&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.06.09-07.55.28:677][397]LogHttp: Warning: 0000025ED7736B00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.06.09-07.55.28:677][397]LogHttp: Warning: 0000025ED7736B00: libcurl info message cache 0 (Connection 1 seems to be dead!)
+[2021.06.09-07.55.28:677][397]LogHttp: Warning: 0000025ED7736B00: libcurl info message cache 1 (Closing connection 1)
+[2021.06.09-07.55.28:678][397]LogHttp: Warning: 0000025ED7736B00: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2021.06.09-07.55.28:678][397]LogHttp: Warning: 0000025ED7736B00: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.06.09-07.55.28:678][397]LogHttp: Warning: 0000025ED7736B00: libcurl info message cache 4 (Closing connection 2)
+[2021.06.09-07.55.28:693][398]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BE8678A83-42E2-DB91-35A7-679DE7BF61B8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=3f1707cc46f67a8ec3c05dba81ae25fa%7Cfbc9a29351c042fbafd16034f9817105%7Cb15b6e19-eb6d-406d-8eea-fa0e3a4d10a6&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.06.09-07.55.37:470][923]BlueprintLog: New page: Compile WB_InteractionStatusDisplay
+[2021.06.09-07.55.37:534][923]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2021.06.09-07.55.38:035][947]LogSavePackage: Moving '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/WB_InteractionStatusDisplay72186676413E58F442382E8847F10420.tmp' to '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/HUD/WB_InteractionStatusDisplay.uasset'
+[2021.06.09-07.55.38:050][947]AssetCheck: New page: Asset Save: WB_InteractionStatusDisplay
+[2021.06.09-07.55.38:050][947]LogContentValidation: Display: Validating WidgetBlueprint /Game/HUD/WB_InteractionStatusDisplay.WB_InteractionStatusDisplay
+[2021.06.09-07.56.02:228][277]BlueprintLog: New page: Compile WB_InteractionStatusDisplay
+[2021.06.09-07.56.02:264][277]LogUObjectHash: Compacting FUObjectHashTables data took   2.49ms
+[2021.06.09-07.56.02:688][298]LogSavePackage: Moving '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/WB_InteractionStatusDisplay772FFC0B4A180267D4DF5999526F7439.tmp' to '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/HUD/WB_InteractionStatusDisplay.uasset'
+[2021.06.09-07.56.02:700][298]AssetCheck: New page: Asset Save: WB_InteractionStatusDisplay
+[2021.06.09-07.56.02:700][298]LogContentValidation: Display: Validating WidgetBlueprint /Game/HUD/WB_InteractionStatusDisplay.WB_InteractionStatusDisplay
+[2021.06.09-07.56.02:956][312]LogSavePackage: Moving '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Saved/WB_InteractionStatusDisplayC2B2708646D6C0D18D91389BD05404EC.tmp' to '../../../../../../Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/Content/HUD/WB_InteractionStatusDisplay.uasset'
+[2021.06.09-07.56.02:967][312]AssetCheck: New page: Asset Save: WB_InteractionStatusDisplay
+[2021.06.09-07.56.02:967][312]LogContentValidation: Display: Validating WidgetBlueprint /Game/HUD/WB_InteractionStatusDisplay.WB_InteractionStatusDisplay
+[2021.06.09-07.56.08:429][639]LogSlate: Window 'WB_InteractionStatusDisplay' being destroyed
+[2021.06.09-07.56.08:446][639]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2021.06.09-07.56.08:446][639]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.09-07.56.08:462][639]LogWorld: UWorld::CleanupWorld for World_3, bSessionEnded=true, bCleanupResources=true
+[2021.06.09-07.56.08:462][639]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: invalid HTTP response code received. URL: https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BE8678A83-42E2-DB91-35A7-679DE7BF61B8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=3f1707cc46f67a8ec3c05dba81ae25fa%7Cfbc9a29351c042fbafd16034f9817105%7Cb15b6e19-eb6d-406d-8eea-fa0e3a4d10a6&AppEnvironment=datacollector-source&UploadType=eteventstream, HTTP code: 0, content length: 0, actual payload size: 0
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: libcurl info message cache 0 (Connection 5 seems to be dead!)
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: libcurl info message cache 1 (Closing connection 5)
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2021.06.09-08.05.29:147][552]LogHttp: Warning: 0000025E2D5BF200: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2021.06.09-08.05.29:148][552]LogHttp: Warning: 0000025E2D5BF200: libcurl info message cache 4 (Closing connection 6)
+[2021.06.09-08.05.29:148][552]LogHttp: Warning: Retry exhausted on https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BE8678A83-42E2-DB91-35A7-679DE7BF61B8%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.25.4-14469661%2B%2B%2BUE4%2BRelease-4.25&UserID=3f1707cc46f67a8ec3c05dba81ae25fa%7Cfbc9a29351c042fbafd16034f9817105%7Cb15b6e19-eb6d-406d-8eea-fa0e3a4d10a6&AppEnvironment=datacollector-source&UploadType=eteventstream
+[2021.06.09-08.05.30:850][594]Candidate modules for hot reload:
+[2021.06.09-08.05.30:850][594]  ImaginePower
+[2021.06.09-08.05.30:850][594]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,1693 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.05.30:859][594]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.05.45:791][651]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:05:45
+[2021.06.09-08.05.45:794][651]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.05.45:794][651]CompilerResultsLog: Parsing headers for ImaginePowerEditor
+[2021.06.09-08.05.45:794][651]CompilerResultsLog:   Running UnrealHeaderTool "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\ImaginePower.uproject" "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\ImaginePowerEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Proti\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.06.09-08.05.45:794][651]CompilerResultsLog: Reflection code generated for ImaginePowerEditor in 5,8450425 seconds
+[2021.06.09-08.05.45:794][651]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.05.45:794][651]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.05.45:795][651]CompilerResultsLog: Building 8 actions with 12 processes...
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [1/8] ImaginePower.init.gen.cpp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [2/8] Container.cpp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [3/8] ImaginePowerGameMode.cpp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [4/8] ImaginePowerCharacter.gen.cpp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [5/8] ImaginePowerCharacter.cpp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [6/8] UE4Editor-ImaginePower-1693.lib
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1693.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1693.exp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [7/8] UE4Editor-ImaginePower-1693.dll
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1693.suppressed.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1693.suppressed.exp
+[2021.06.09-08.05.45:795][651]CompilerResultsLog:   [8/8] ImaginePowerEditor.target
+[2021.06.09-08.05.45:795][651]CompilerResultsLog: Total time in Parallel executor: 7,95 seconds
+[2021.06.09-08.05.45:795][651]CompilerResultsLog: Total execution time: 14,51 seconds
+[2021.06.09-08.05.45:795][651]LogMainFrame: MainFrame: Module compiling took 14.952 seconds
+[2021.06.09-08.05.45:827][651]LogClass: Could not find existing class ImaginePowerCharacter in package /Script/ImaginePower for HotReload, assuming new class
+[2021.06.09-08.05.45:827][651]LogClass: Function SpawnMinion is new.
+[2021.06.09-08.05.45:839][651]LogClass: EObjectList HotReload.
+[2021.06.09-08.05.45:841][651]LogHotReload: Re-instancing Container after hot-reload.
+[2021.06.09-08.05.45:887][651]LogHotReload: Re-instancing ImaginePowerCharacter after hot-reload.
+[2021.06.09-08.05.45:927][651]LogContentBrowser: Native class hierarchy updated for 'ImaginePower' in 0.0005 seconds. Added 9 classes and 2 folders.
+[2021.06.09-08.05.45:936][651]Display: HotReload successful (8 functions remapped  0 scriptstructs remapped)
+[2021.06.09-08.05.46:032][651]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 3455 classes and 830 folders.
+[2021.06.09-08.05.46:033][651]Display: HotReload took 15.2s.
+[2021.06.09-08.07.21:116][992]Candidate modules for hot reload:
+[2021.06.09-08.07.21:117][992]  ImaginePower
+[2021.06.09-08.07.21:117][992]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,8852 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.07.21:124][992]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.07.22:920][  5]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:07:22
+[2021.06.09-08.07.22:920][  5]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(130) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.07.22:921][  5]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(130) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.07.22:922][  5]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.07.22:922][  5]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(130) : error C2064: term does not evaluate to a function taking 0 arguments
+[2021.06.09-08.07.22:922][  5]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(134) : error C2143: syntax error: missing ';' before '}'
+[2021.06.09-08.07.22:922][  5]LogMainFrame: MainFrame: Module compiling took 1.809 seconds
+[2021.06.09-08.07.22:922][  5]Warning: HotReload failed, recompile failed
+[2021.06.09-08.07.34:495][144]Candidate modules for hot reload:
+[2021.06.09-08.07.34:495][144]  ImaginePower
+[2021.06.09-08.07.34:495][144]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,5493 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.07.34:503][144]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.07.36:211][245]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:07:36
+[2021.06.09-08.07.36:212][245]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.07.36:212][245]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.07.36:212][245]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.07.36:212][245]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.07.36:212][245]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.07.36:212][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.07.36:212][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.07.36:212][245]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2064: term does not evaluate to a function taking 0 arguments
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(132) : error C2143: syntax error: missing ';' before '}'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(137) : error C2059: syntax error: 'else'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(138) : error C2143: syntax error: missing ';' before '{'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(138) : error C2447: '{': missing function header (old-style formal list?)
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(146) : error C2059: syntax error: 'if'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(147) : error C2059: syntax error: 'constant'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(147) : error C2059: syntax error: ')'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(148) : error C2059: syntax error: '}'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(148) : error C2143: syntax error: missing ';' before '}'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(155) : error C2143: syntax error: missing ';' before '{'
+[2021.06.09-08.07.36:213][245]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(155) : error C2447: '{': missing function header (old-style formal list?)
+[2021.06.09-08.07.36:214][245]LogMainFrame: MainFrame: Module compiling took 1.722 seconds
+[2021.06.09-08.07.36:214][245]Warning: HotReload failed, recompile failed
+[2021.06.09-08.08.47:018][ 64]Candidate modules for hot reload:
+[2021.06.09-08.08.47:019][ 64]  ImaginePower
+[2021.06.09-08.08.47:019][ 64]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,790 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.08.47:026][ 64]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.08.48:736][166]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:08:48
+[2021.06.09-08.08.48:736][166]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.08.48:736][166]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.08.48:737][166]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.08.48:737][166]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2064: term does not evaluate to a function taking 0 arguments
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(137) : error C2059: syntax error: 'else'
+[2021.06.09-08.08.48:737][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(138) : error C2143: syntax error: missing ';' before '{'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(138) : error C2447: '{': missing function header (old-style formal list?)
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(146) : error C2059: syntax error: 'if'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(147) : error C2059: syntax error: 'constant'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(147) : error C2059: syntax error: ')'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(148) : error C2059: syntax error: '}'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(148) : error C2143: syntax error: missing ';' before '}'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(155) : error C2143: syntax error: missing ';' before '{'
+[2021.06.09-08.08.48:738][166]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(155) : error C2447: '{': missing function header (old-style formal list?)
+[2021.06.09-08.08.48:738][166]LogMainFrame: MainFrame: Module compiling took 1.723 seconds
+[2021.06.09-08.08.48:739][166]Warning: HotReload failed, recompile failed
+[2021.06.09-08.08.57:314][371]Candidate modules for hot reload:
+[2021.06.09-08.08.57:314][371]  ImaginePower
+[2021.06.09-08.08.57:314][371]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,9655 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.08.57:321][371]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.08.59:218][390]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:08:59
+[2021.06.09-08.08.59:218][390]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.08.59:218][390]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.08.59:218][390]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.08.59:219][390]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.08.59:219][390]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.08.59:219][390]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.08.59:219][390]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.08.59:219][390]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.08.59:219][390]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2064: term does not evaluate to a function taking 0 arguments
+[2021.06.09-08.08.59:219][390]LogMainFrame: MainFrame: Module compiling took 1.909 seconds
+[2021.06.09-08.08.59:219][390]Warning: HotReload failed, recompile failed
+[2021.06.09-08.13.17:762][426]Candidate modules for hot reload:
+[2021.06.09-08.13.17:762][426]  ImaginePower
+[2021.06.09-08.13.17:762][426]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,5576 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.13.17:770][426]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.13.19:761][545]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:13:19
+[2021.06.09-08.13.19:762][545]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.13.19:762][545]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.13.19:762][545]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.13.19:762][545]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.13.19:762][545]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.13.19:762][545]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.13.19:762][545]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.13.19:762][545]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.13.19:762][545]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2064: term does not evaluate to a function taking 0 arguments
+[2021.06.09-08.13.19:762][545]LogMainFrame: MainFrame: Module compiling took 2.005 seconds
+[2021.06.09-08.13.19:762][545]Warning: HotReload failed, recompile failed
+[2021.06.09-08.14.32:887][337]Candidate modules for hot reload:
+[2021.06.09-08.14.32:887][337]  ImaginePower
+[2021.06.09-08.14.32:887][337]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,1227 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.14.32:894][337]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.14.34:698][350]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:14:34
+[2021.06.09-08.14.34:698][350]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.14.34:699][350]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.14.34:699][350]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.14.34:699][350]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.14.34:699][350]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.14.34:699][350]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.14.34:699][350]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.14.34:700][350]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.14.34:700][350]LogMainFrame: MainFrame: Module compiling took 1.816 seconds
+[2021.06.09-08.14.34:700][350]Warning: HotReload failed, recompile failed
+[2021.06.09-08.15.11:614][614]Candidate modules for hot reload:
+[2021.06.09-08.15.11:614][614]  ImaginePower
+[2021.06.09-08.15.11:614][614]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,4892 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.15.11:621][614]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.15.13:274][712]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:15:13
+[2021.06.09-08.15.13:274][712]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.15.13:274][712]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.15.13:275][712]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.15.13:275][712]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.15.13:275][712]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.15.13:275][712]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(132) : error C2065: 'CreateWidget': undeclared identifier
+[2021.06.09-08.15.13:275][712]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(132) : error C2275: 'UUserWidget': illegal use of this type as an expression
+[2021.06.09-08.15.13:275][712]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\PlayerController.generated.h(37): note: see declaration of 'UUserWidget'
+[2021.06.09-08.15.13:275][712]LogMainFrame: MainFrame: Module compiling took 1.664 seconds
+[2021.06.09-08.15.13:275][712]Warning: HotReload failed, recompile failed
+[2021.06.09-08.17.41:879][230]LogTcpMessaging: Started Connection to '127.0.0.1:6666'
+[2021.06.09-08.21.10:779][922]Candidate modules for hot reload:
+[2021.06.09-08.21.10:780][922]  ImaginePower
+[2021.06.09-08.21.10:780][922]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,9095 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.21.10:787][922]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.21.26:216][275]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:21:26
+[2021.06.09-08.21.26:216][275]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.21.26:217][275]CompilerResultsLog: Parsing headers for ImaginePowerEditor
+[2021.06.09-08.21.26:217][275]CompilerResultsLog:   Running UnrealHeaderTool "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\ImaginePower.uproject" "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\ImaginePowerEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Proti\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.06.09-08.21.26:217][275]CompilerResultsLog: Reflection code generated for ImaginePowerEditor in 5,6299342 seconds
+[2021.06.09-08.21.26:217][275]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.21.26:218][275]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.21.26:218][275]CompilerResultsLog: Building 8 actions with 12 processes...
+[2021.06.09-08.21.26:218][275]CompilerResultsLog:   [1/8] ImaginePowerCharacter.cpp
+[2021.06.09-08.21.26:218][275]CompilerResultsLog:    C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1429) : error C2338: The given OwningObject is not of a supported type for use with CreateWidget.
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:   C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131): note: see reference to function template instantiation 'WidgetT *CreateWidget<UUserWidget,AController>(OwnerT *,TSubclassOf<UUserWidget>,FName)' being compiled
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:           with
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:           [
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:               WidgetT=UUserWidget,
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:               OwnerT=AController
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:           ]
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:    C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1435) : error C2665: 'UUserWidget::CreateWidgetInstance': none of the 5 overloads could convert all the argument types
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1102): note: could be 'UUserWidget *UUserWidget::CreateWidgetInstance(UWorld &,TSubclassOf<UUserWidget>,FName)'
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1101): note: or       'UUserWidget *UUserWidget::CreateWidgetInstance(UGameInstance &,TSubclassOf<UUserWidget>,FName)'
+[2021.06.09-08.21.26:219][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1100): note: or       'UUserWidget *UUserWidget::CreateWidgetInstance(APlayerController &,TSubclassOf<UUserWidget>,FName)'
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1099): note: or       'UUserWidget *UUserWidget::CreateWidgetInstance(UWidgetTree &,TSubclassOf<UUserWidget>,FName)'
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1098): note: or       'UUserWidget *UUserWidget::CreateWidgetInstance(UWidget &,TSubclassOf<UUserWidget>,FName)'
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Blueprint/UserWidget.h(1435): note: while trying to match the argument list '(OwnerT, TSubclassOf<UUserWidget>, FName)'
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:           with
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:           [
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:               OwnerT=AController
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:           ]
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   [2/8] ImaginePowerGameMode.cpp
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   [3/8] Minion.gen.cpp
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   [4/8] ImaginePowerCharacter.gen.cpp
+[2021.06.09-08.21.26:220][275]CompilerResultsLog:   [5/8] Minion.cpp
+[2021.06.09-08.21.26:220][275]LogMainFrame: MainFrame: Module compiling took 15.445 seconds
+[2021.06.09-08.21.26:220][275]Warning: HotReload failed, recompile failed
+[2021.06.09-08.22.07:144][943]Candidate modules for hot reload:
+[2021.06.09-08.22.07:144][943]  ImaginePower
+[2021.06.09-08.22.07:144][943]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,3581 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.22.07:152][943]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.22.11:718][969]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:22:11
+[2021.06.09-08.22.11:719][969]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.22.11:720][969]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.22.11:720][969]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.22.11:721][969]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.22.11:721][969]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.22.11:721][969]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2678: binary '&': no operator found which takes a left-hand operand of type 'AController *' (or there is no acceptable conversion)
+[2021.06.09-08.22.11:722][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h(36): note: could be 'EPropertyAccessResultFlags operator &(EPropertyAccessResultFlags,EPropertyAccessResultFlags)'
+[2021.06.09-08.22.11:722][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrack.h(121): note: or       'EMovieSceneTrackEasingSupportFlags operator &(EMovieSceneTrackEasingSupportFlags,EMovieSceneTrackEasingSupportFlags)'
+[2021.06.09-08.22.11:722][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\MovieScene\Public\MovieSceneTrack.h(30): note: or       'ECookOptimizationFlags operator &(ECookOptimizationFlags,ECookOptimizationFlags)'
+[2021.06.09-08.22.11:723][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\MovieScene\Public\Evaluation/MovieSceneSegment.h(27): note: or       'ESectionEvaluationFlags operator &(ESectionEvaluationFlags,ESectionEvaluationFlags)'
+[2021.06.09-08.22.11:723][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\UMG\Public\Components/Widget.h(180): note: or       'EWidgetDesignFlags operator &(EWidgetDesignFlags,EWidgetDesignFlags)'
+[2021.06.09-08.22.11:723][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine\Channel.h(43): note: or       'EChannelCreateFlags operator &(EChannelCreateFlags,EChannelCreateFlags)'
+[2021.06.09-08.22.11:724][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\AnimationRuntime.h(482): note: or       'FAnimationRuntime::EBlendPosesPerBoneFilterFlags operator &(FAnimationRuntime::EBlendPosesPerBoneFilterFlags,FAnimationRuntime::EBlendPosesPerBoneFilterFlags)'
+[2021.06.09-08.22.11:724][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Public\Rendering/StaticMeshVertexDataInterface.h(13): note: or       'EResizeBufferFlags operator &(EResizeBufferFlags,EResizeBufferFlags)'
+[2021.06.09-08.22.11:725][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\RHI\Public\PipelineStateCache.h(25): note: or       'EApplyRendertargetOption operator &(EApplyRendertargetOption,EApplyRendertargetOption)'
+[2021.06.09-08.22.11:725][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\RenderCore\Public\VirtualTexturing.h(182): note: or       'EVTProducePageFlags operator &(EVTProducePageFlags,EVTProducePageFlags)'
+[2021.06.09-08.22.11:725][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/Blueprint.h(413): note: or       'EGetObjectOrWorldBeingDebuggedFlags operator &(EGetObjectOrWorldBeingDebuggedFlags,EGetObjectOrWorldBeingDebuggedFlags)'
+[2021.06.09-08.22.11:726][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/SceneComponent.h(96): note: or       'EMoveComponentFlags operator &(EMoveComponentFlags,EMoveComponentFlags)'
+[2021.06.09-08.22.11:726][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Components/ActorComponent.h(74): note: or       'EUpdateTransformFlags operator &(EUpdateTransformFlags,EUpdateTransformFlags)'
+[2021.06.09-08.22.11:726][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/NetSerialization.h(410): note: or       'EFastArraySerializerDeltaFlags operator &(EFastArraySerializerDeltaFlags,EFastArraySerializerDeltaFlags)'
+[2021.06.09-08.22.11:727][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Sockets\Public\SocketTypes.h(262): note: or       'ERecvMultiFlags operator &(ERecvMultiFlags,ERecvMultiFlags)'
+[2021.06.09-08.22.11:727][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\RenderCore\Public\VertexFactory.h(91): note: or       'EVertexStreamUsage operator &(EVertexStreamUsage,EVertexStreamUsage)'
+[2021.06.09-08.22.11:727][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Slate\Public\Framework/Text/IRun.h(46): note: or       'ERunAttributes operator &(ERunAttributes,ERunAttributes)'
+[2021.06.09-08.22.11:728][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Widgets\InvalidateWidgetReason.h(62): note: or       'EInvalidateWidgetReason operator &(EInvalidateWidgetReason,EInvalidateWidgetReason)'
+[2021.06.09-08.22.11:728][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\SlateCore\Public\FastUpdate/WidgetProxy.h(41): note: or       'EWidgetUpdateFlags operator &(EWidgetUpdateFlags,EWidgetUpdateFlags)'
+[2021.06.09-08.22.11:728][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Layout/Clipping.h(201): note: or       'EClippingFlags operator &(EClippingFlags,EClippingFlags)'
+[2021.06.09-08.22.11:729][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Rendering/RenderingCommon.h(127): note: or       'ESlateBatchDrawFlag operator &(ESlateBatchDrawFlag,ESlateBatchDrawFlag)'
+[2021.06.09-08.22.11:729][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\SlateCore\Public\Rendering/RenderingCommon.h(99): note: or       'ESlateDrawEffect operator &(ESlateDrawEffect,ESlateDrawEffect)'
+[2021.06.09-08.22.11:729][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\ProfilingDebugging/CsvProfiler.h(175): note: or       'ECsvProfilerFlags operator &(ECsvProfilerFlags,ECsvProfilerFlags)'
+[2021.06.09-08.22.11:730][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/Class.h(1904): note: or       'EGetByNameFlags operator &(EGetByNameFlags,EGetByNameFlags)'
+[2021.06.09-08.22.11:730][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/UObjectBaseUtility.h(34): note: or       'EObjectFullNameFlags operator &(EObjectFullNameFlags,EObjectFullNameFlags)'
+[2021.06.09-08.22.11:730][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/UObjectGlobals.h(1987): note: or       'EHotReloadedClassFlags operator &(EHotReloadedClassFlags,EHotReloadedClassFlags)'
+[2021.06.09-08.22.11:730][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(550): note: or       'EInternalObjectFlags operator &(EInternalObjectFlags,EInternalObjectFlags)'
+[2021.06.09-08.22.11:731][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(527): note: or       'EObjectFlags operator &(EObjectFlags,EObjectFlags)'
+[2021.06.09-08.22.11:731][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(469): note: or       'EMapPropertyFlags operator &(EMapPropertyFlags,EMapPropertyFlags)'
+[2021.06.09-08.22.11:731][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(458): note: or       'EArrayPropertyFlags operator &(EArrayPropertyFlags,EArrayPropertyFlags)'
+[2021.06.09-08.22.11:732][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(447): note: or       'EPropertyFlags operator &(EPropertyFlags,EPropertyFlags)'
+[2021.06.09-08.22.11:732][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(353): note: or       'EClassCastFlags operator &(EClassCastFlags,EClassCastFlags)'
+[2021.06.09-08.22.11:732][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(245): note: or       'EClassFlags operator &(EClassFlags,EClassFlags)'
+[2021.06.09-08.22.11:733][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/ObjectMacros.h(141): note: or       'EPackageFlags operator &(EPackageFlags,EPackageFlags)'
+[2021.06.09-08.22.11:733][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/Script.h(151): note: or       'EFunctionFlags operator &(EFunctionFlags,EFunctionFlags)'
+[2021.06.09-08.22.11:733][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Async/ParallelFor.h(36): note: or       'EParallelForFlags operator &(EParallelForFlags,EParallelForFlags)'
+[2021.06.09-08.22.11:734][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Misc/FileHelper.h(199): note: or       'FFileHelper::EHashOptions operator &(FFileHelper::EHashOptions,FFileHelper::EHashOptions)'
+[2021.06.09-08.22.11:734][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformFile.h(65): note: or       'EPlatformFileWrite operator &(EPlatformFileWrite,EPlatformFileWrite)'
+[2021.06.09-08.22.11:734][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformFile.h(54): note: or       'EPlatformFileRead operator &(EPlatformFileRead,EPlatformFileRead)'
+[2021.06.09-08.22.11:734][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformFile.h(43): note: or       'EAsyncIOPriorityAndFlags operator &(EAsyncIOPriorityAndFlags,EAsyncIOPriorityAndFlags)'
+[2021.06.09-08.22.11:735][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Modules/ModuleManager.h(75): note: or       'ECheckModuleCompatibilityFlags operator &(ECheckModuleCompatibilityFlags,ECheckModuleCompatibilityFlags)'
+[2021.06.09-08.22.11:735][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\GenericPlatform/GenericPlatformAffinity.h(39): note: or       'EThreadCreateFlags operator &(EThreadCreateFlags,EThreadCreateFlags)'
+[2021.06.09-08.22.11:735][969]CompilerResultsLog:   C:\Program Files\Epic Games\UE_4.25\Engine\Source\Runtime\Core\Public\Internationalization/LocalizedTextSourceTypes.h(58): note: or       'ELocalizationLoadFlags operator &(ELocalizationLoadFlags,ELocalizationLoadFlags)'
+[2021.06.09-08.22.11:736][969]CompilerResultsLog:   C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131): note: while trying to match the argument list '(AController *, TSubclassOf<UUserWidget>)'
+[2021.06.09-08.22.11:736][969]CompilerResultsLog:    C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Source\ImaginePower\ImaginePowerCharacter.cpp(131) : error C2672: 'CreateWidget': no matching overloaded function found
+[2021.06.09-08.22.11:736][969]LogMainFrame: MainFrame: Module compiling took 4.595 seconds
+[2021.06.09-08.22.11:737][969]Warning: HotReload failed, recompile failed
+[2021.06.09-08.22.26:206][ 73]Candidate modules for hot reload:
+[2021.06.09-08.22.26:206][ 73]  ImaginePower
+[2021.06.09-08.22.26:206][ 73]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,3151 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.22.26:213][ 73]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.22.27:009][ 83]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:22:27
+[2021.06.09-08.22.27:009][ 83]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.22.27:009][ 83]CompilerResultsLog: ERROR: Unhandled exception: System.IO.IOException: The requested operation cannot be performed on a file with a user-mapped section open.
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog: 
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at System.IO.File.InternalWriteAllBytes(String path, Byte[] bytes, Boolean checkHost)
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at Tools.DotNETCommon.FileReference.WriteAllBytesIfDifferent(FileReference Location, Byte[] Contents) in D:\Build\++UE4\Sync\Engine\Saved\CsTools\Engine\Source\Programs\DotNETCommon\DotNETUtilities\FileReference.cs:line 512
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at UnrealBuildTool.HotReload.PatchActionGraph(IEnumerable`1 Actions, Dictionary`2 OriginalFileToHotReloadFile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\HotReload.cs:line 838
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at UnrealBuildTool.HotReload.ApplyState(HotReloadState HotReloadState, TargetMakefile Makefile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\System\HotReload.cs:line 359
+[2021.06.09-08.22.27:010][ 83]CompilerResultsLog:           at UnrealBuildTool.BuildMode.GetActionsForTarget(BuildConfiguration BuildConfiguration, TargetDescriptor TargetDescriptor, TargetMakefile Makefile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 618
+[2021.06.09-08.22.27:011][ 83]CompilerResultsLog:           at UnrealBuildTool.BuildMode.Build(List`1 TargetDescriptors, BuildConfiguration BuildConfiguration, ISourceFileWorkingSet WorkingSet, BuildOptions Options, FileReference WriteOutdatedActionsFile) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 277
+[2021.06.09-08.22.27:011][ 83]CompilerResultsLog:           at UnrealBuildTool.BuildMode.Execute(CommandLineArguments Arguments) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\Modes\BuildMode.cs:line 219
+[2021.06.09-08.22.27:011][ 83]CompilerResultsLog:           at UnrealBuildTool.UnrealBuildTool.Main(String[] ArgumentsArray) in D:\Build\++UE4\Sync\Engine\Source\Programs\UnrealBuildTool\UnrealBuildTool.cs:line 550
+[2021.06.09-08.22.27:011][ 83]LogMainFrame: MainFrame: Module compiling took 0.809 seconds
+[2021.06.09-08.22.27:011][ 83]Warning: HotReload failed, recompile failed
+[2021.06.09-08.23.44:057][705]Candidate modules for hot reload:
+[2021.06.09-08.23.44:057][705]  ImaginePower
+[2021.06.09-08.23.44:057][705]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,1071 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.23.44:064][705]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.23.55:146][195]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:23:55
+[2021.06.09-08.23.55:146][195]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.23.55:146][195]CompilerResultsLog: Parsing headers for ImaginePowerEditor
+[2021.06.09-08.23.55:147][195]CompilerResultsLog:   Running UnrealHeaderTool "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\ImaginePower.uproject" "C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\ImaginePowerEditor\Development\ImaginePowerEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Proti\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2021.06.09-08.23.55:147][195]CompilerResultsLog: Reflection code generated for ImaginePowerEditor in 5,3029792 seconds
+[2021.06.09-08.23.55:147][195]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.23.55:147][195]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.23.55:147][195]CompilerResultsLog: Building 6 actions with 12 processes...
+[2021.06.09-08.23.55:147][195]CompilerResultsLog:   [1/6] ImaginePowerGameMode.cpp
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:   [2/6] ImaginePowerCharacter.gen.cpp
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:   [3/6] ImaginePowerCharacter.cpp
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:   [4/6] UE4Editor-ImaginePower-1071.lib
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1071.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1071.exp
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:   [5/6] UE4Editor-ImaginePower-1071.dll
+[2021.06.09-08.23.55:148][195]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1071.suppressed.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-1071.suppressed.exp
+[2021.06.09-08.23.55:149][195]CompilerResultsLog:   [6/6] ImaginePowerEditor.target
+[2021.06.09-08.23.55:149][195]CompilerResultsLog: Total time in Parallel executor: 4,68 seconds
+[2021.06.09-08.23.55:149][195]CompilerResultsLog: Total execution time: 10,78 seconds
+[2021.06.09-08.23.55:149][195]LogMainFrame: MainFrame: Module compiling took 11.096 seconds
+[2021.06.09-08.23.55:235][195]LogClass: Could not find existing class ImaginePowerCharacter in package /Script/ImaginePower for HotReload, assuming new class
+[2021.06.09-08.23.55:235][195]LogClass: Function SpawnMinion is new.
+[2021.06.09-08.23.55:252][195]LogClass: EObjectList HotReload.
+[2021.06.09-08.23.55:262][195]LogHotReload: Re-instancing ImaginePowerCharacter after hot-reload.
+[2021.06.09-08.23.55:310][195]LogContentBrowser: Native class hierarchy updated for 'ImaginePower' in 0.0004 seconds. Added 9 classes and 2 folders.
+[2021.06.09-08.23.55:319][195]Display: HotReload successful (8 functions remapped  0 scriptstructs remapped)
+[2021.06.09-08.23.55:416][195]LogContentBrowser: Native class hierarchy populated in 0.0078 seconds. Added 3455 classes and 830 folders.
+[2021.06.09-08.23.55:417][195]Display: HotReload took 11.4s.
+[2021.06.09-08.24.28:369][370]Candidate modules for hot reload:
+[2021.06.09-08.24.28:369][370]  ImaginePower
+[2021.06.09-08.24.28:370][370]Launching UnrealBuildTool... [C:/Program Files/Epic Games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=ImaginePower,8225 ImaginePowerEditor Win64 Development -Project="C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject" "C:/Projects/Piotr_Starczewski_Imagine_Power/ImaginePower/ImaginePower.uproject"  -IgnoreJunk]
+[2021.06.09-08.24.28:377][370]Warning: Starting HotReload took  0.0s.
+[2021.06.09-08.24.33:822][638]CompilerResultsLog: New page: Compilation - 9 Jun 2021, 12:24:33
+[2021.06.09-08.24.33:822][638]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (C:\Projects\Piotr_Starczewski_Imagine_Power).
+[2021.06.09-08.24.33:822][638]CompilerResultsLog: Building ImaginePowerEditor...
+[2021.06.09-08.24.33:822][638]CompilerResultsLog: Using Visual Studio 2019 14.29.30037 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2021.06.09-08.24.33:822][638]CompilerResultsLog: Building 4 actions with 12 processes...
+[2021.06.09-08.24.33:822][638]CompilerResultsLog:   [1/4] ImaginePowerCharacter.cpp
+[2021.06.09-08.24.33:822][638]CompilerResultsLog:   [2/4] UE4Editor-ImaginePower-8225.lib
+[2021.06.09-08.24.33:823][638]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-8225.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-8225.exp
+[2021.06.09-08.24.33:823][638]CompilerResultsLog:   [3/4] UE4Editor-ImaginePower-8225.dll
+[2021.06.09-08.24.33:823][638]CompilerResultsLog:      Creating library C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-8225.suppressed.lib and object C:\Projects\Piotr_Starczewski_Imagine_Power\ImaginePower\Intermediate\Build\Win64\UE4Editor\Development\ImaginePower\UE4Editor-ImaginePower-8225.suppressed.exp
+[2021.06.09-08.24.33:823][638]CompilerResultsLog:   [4/4] ImaginePowerEditor.target
+[2021.06.09-08.24.33:823][638]CompilerResultsLog: Total time in Parallel executor: 4,41 seconds
+[2021.06.09-08.24.33:823][638]CompilerResultsLog: Total execution time: 5,13 seconds
+[2021.06.09-08.24.33:823][638]LogMainFrame: MainFrame: Module compiling took 5.458 seconds
+[2021.06.09-08.24.33:870][638]LogClass: EObjectList HotReload.
+[2021.06.09-08.24.33:889][638]LogContentBrowser: Native class hierarchy updated for 'ImaginePower' in 0.0007 seconds. Added 9 classes and 2 folders.
+[2021.06.09-08.24.33:905][638]Display: HotReload successful (9 functions remapped  0 scriptstructs remapped)
+[2021.06.09-08.24.34:023][638]LogContentBrowser: Native class hierarchy populated in 0.0115 seconds. Added 3455 classes and 830 folders.
+[2021.06.09-08.24.34:024][638]Display: HotReload took  5.7s.
+[2021.06.09-08.24.36:405][690]LogTemp: Repeating last play command: Selected Viewport
+[2021.06.09-08.24.36:420][690]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.06.09-08.24.36:420][690]PIE: New page: PIE session: FirstPersonExampleMap (9 Jun 2021, 12:24:36)
+[2021.06.09-08.24.36:420][690]LogPlayLevel: Creating play world package: /Game/FirstPersonCPP/Maps/UEDPIE_0_FirstPersonExampleMap

@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "Blueprint/UserWidget.h"
+#include "Blueprint/UserWidget.h" //Do tworzenia widgetów
 #include "ObjectList.h" //Dodaj plik z Enumem EObjectList
 #include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji z graczem
 #include "MinionInterface.h" //Interfejs do komunikacji z przedmiotami

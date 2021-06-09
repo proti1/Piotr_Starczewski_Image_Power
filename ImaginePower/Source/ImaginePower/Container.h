@@ -21,23 +21,24 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	//Nie można interaktować z obiektieem kiedy jest "zaklepany" przez innego aktora
-	bool bIsBusy;
-
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	//Zdefiniuj funkcję interfejsu IPlayerInteractionInterface
+	//Zdefiniuj funkcję interfejsu IMInionInterface
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Interface")
 	void PickUp();
 	virtual void PickUp_Implementation() override;
 
-	//Funkcja do zablokowania 
+	//Funkcja do zablokowania itemu
 	UFUNCTION(BlueprintCallable, Category = "Logic")
 	void SetAsBusy(bool bShouldBeBusy);
 
 	//Zadeklarowany Enum z ObjectList.h
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EObjectList NeededObject;
+
+	//Nie można interaktować z obiektiem kiedy jest "zaklepany" przez innego aktora
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Logic")
+	bool bIsBusy;
 };
