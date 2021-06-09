@@ -21,7 +21,7 @@ class IMAGINEPOWER_API IPlayerInteractionInterface
 	GENERATED_BODY()
 
 public:
-	//Ffunkcja do interakcji
+	//Ffunkcja do interakcji gracza z otoczeniem
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent, Category = "Player Interaction")
 	void OnInteract();
 };

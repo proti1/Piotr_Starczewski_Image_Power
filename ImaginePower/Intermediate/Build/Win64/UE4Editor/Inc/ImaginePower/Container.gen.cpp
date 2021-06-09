@@ -157,9 +157,9 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_MetaData[] = {
 		{ "Category", "Logic" },
-		{ "Comment", "//Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektieem kiedy jest \"zaklepany\" przez innego aktora\n" },
+		{ "Comment", "//Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektiem kiedy jest \"zaklepany\" przez innego aktora\n" },
 		{ "ModuleRelativePath", "Container.h" },
-		{ "ToolTip", "Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektieem kiedy jest \"zaklepany\" przez innego aktora" },
+		{ "ToolTip", "Nie mo\xc5\xbcna interaktowa\xc4\x87 z obiektiem kiedy jest \"zaklepany\" przez innego aktora" },
 	};
 #endif
 	void Z_Construct_UClass_AContainer_Statics::NewProp_bIsBusy_SetBit(void* Obj)
@@ -212,7 +212,7 @@ void EmptyLinkFunctionForGeneratedCodeContainer() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AContainer, 3922558256);
+	IMPLEMENT_CLASS(AContainer, 3218733448);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AContainer>()
 	{
 		return AContainer::StaticClass();

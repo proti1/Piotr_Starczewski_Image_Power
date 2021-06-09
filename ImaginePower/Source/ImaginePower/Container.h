@@ -38,7 +38,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EObjectList NeededObject;
 
-	//Nie można interaktować z obiektieem kiedy jest "zaklepany" przez innego aktora
+	//Nie można interaktować z obiektiem kiedy jest "zaklepany" przez innego aktora
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Logic")
 	bool bIsBusy;
 };

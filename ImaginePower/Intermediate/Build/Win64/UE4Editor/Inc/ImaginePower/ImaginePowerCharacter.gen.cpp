@@ -19,6 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	UPackage* Z_Construct_UPackage__Script_ImaginePower();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USoundBase_NoRegister();
 	IMAGINEPOWER_API UClass* Z_Construct_UClass_AImaginePowerProjectile_NoRegister();
@@ -99,6 +100,14 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MaxInteractLength_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_MaxInteractLength;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StatusInteractionWidgetRef_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_StatusInteractionWidgetRef;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StatusInteractionWidget_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_StatusInteractionWidget;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_bUsingMotionControllers_MetaData[];
 #endif
@@ -224,6 +233,25 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength = { "MaxInteractLength", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, MaxInteractLength), METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidgetRef_MetaData[] = {
+		{ "Category", "Widget" },
+		{ "Comment", "//Referencja do widgeta\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
+		{ "ToolTip", "Referencja do widgeta" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidgetRef = { "StatusInteractionWidgetRef", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, StatusInteractionWidgetRef), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidgetRef_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidgetRef_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidget_MetaData[] = {
+		{ "Category", "Widget" },
+		{ "Comment", "//Widget informuj\xc4\x85""cy o mo\xc5\xbcliwo\xc5\x9b""ci interakcji\n" },
+		{ "ModuleRelativePath", "ImaginePowerCharacter.h" },
+		{ "ToolTip", "Widget informuj\xc4\x85""cy o mo\xc5\xbcliwo\xc5\x9b""ci interakcji" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidget = { "StatusInteractionWidget", nullptr, (EPropertyFlags)0x0014000000000005, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AImaginePowerCharacter, StatusInteractionWidget), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidget_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidget_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_bUsingMotionControllers_MetaData[] = {
 		{ "Category", "Gameplay" },
@@ -380,6 +408,8 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxNumberOfMinions,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MinionSpawnDistance,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_MaxInteractLength,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidgetRef,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_StatusInteractionWidget,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_bUsingMotionControllers,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_FireAnimation,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AImaginePowerCharacter_Statics::NewProp_FireSound,
@@ -426,7 +456,7 @@ void EmptyLinkFunctionForGeneratedCodeImaginePowerCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AImaginePowerCharacter, 1617400094);
+	IMPLEMENT_CLASS(AImaginePowerCharacter, 1999227316);
 	template<> IMAGINEPOWER_API UClass* StaticClass<AImaginePowerCharacter>()
 	{
 		return AImaginePowerCharacter::StaticClass();

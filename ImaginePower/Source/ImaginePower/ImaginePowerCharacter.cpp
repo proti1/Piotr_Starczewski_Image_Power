@@ -113,6 +113,9 @@ void AImaginePowerCharacter::BeginPlay()
 		VR_Gun->SetHiddenInGame(true, true);
 		Mesh1P->SetHiddenInGame(false, true);
 	}
+
+	//Zinicjuj referencje do kontrolera gracza
+	MyController = GWorld->GetFirstPlayerController();
 }
 
 void AImaginePowerCharacter::Tick(float DeltaTime)
@@ -125,6 +128,20 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 
 		bInteractActorInRange = true;
 
+		//Jeśli widget jest ustawiony, wywołaj go
+		if (StatusInteractionWidget != nullptr)
+		{
+			if (StatusInteractionWidgetRef == nullptr)
+			{
+				StatusInteractionWidgetRef = CreateWidget<UUserWidget>(MyController, StatusInteractionWidget);
+				if (StatusInteractionWidgetRef != nullptr)
+				{
+					//Dodaj do viewportu widget o możliwości interakcji
+					StatusInteractionWidgetRef->AddToViewport();
+				}
+			}
+		}
+
 		//if (GEngine)
 		// 	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %s"), InteractingActor->GetName()));
 	}
@@ -134,11 +151,19 @@ void AImaginePowerCharacter::Tick(float DeltaTime)
 
 		//Zresetuj pointer po skończonej interakcji
 		InteractingActor = nullptr;
+
+		if(StatusInteractionWidgetRef)
+		{
+			//Dodaj do viewportu widget o możliwości interakcji
+			StatusInteractionWidgetRef->RemoveFromParent();
+			StatusInteractionWidgetRef->RemoveFromViewport();
+			StatusInteractionWidgetRef = nullptr;
+		}
 	}
 
 	//Do debugowania. Wyświetla informację czy przed graczem znajduje się aktor zdolny do interakcji
-	if (GEngine)
-		GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
+	//if (GEngine)
+	//	GEngine->AddOnScreenDebugMessage(-1, 0.f, FColor::Blue, FString::Printf(TEXT("Moze Interaktować: %d"), bInteractActorInRange ? 1 : 0));
 }
 
 
@@ -342,13 +367,14 @@ bool AImaginePowerCharacter::EnableTouchscreenMovement(class UInputComponent* Pl
 //Podczas interakcji użyj interfejsu UPlayerInteractionInterface do wykonywania czynności
 void AImaginePowerCharacter::InteractButton()
 {
-	if (bInteractActorInRange)
+	if (bInteractActorInRange && InteractingActor != nullptr)
 	{
 		//Jeśli interfejs istnieje, zatrzymaj gracza i zacznij interakcję
 		if (UKismetSystemLibrary::DoesImplementInterface(InteractingActor, UPlayerInteractionInterface::StaticClass()))
 		{
 			IPlayerInteractionInterface::Execute_OnInteract(InteractingActor);
 		}
+
 
 		//Linia do debugowania
 		//DrawDebugLine(GetWorld(), CameraLocation, InteractionRayEnd, FColor::Green, false, 2.0f, -1, 5.0f);
@@ -372,7 +398,6 @@ void AImaginePowerCharacter::SpecialButton()
 //Sprawdź czy gracz może interaktować a następnie czy znajduje się przed nim aktor z odpowiednim tagiem		
 bool AImaginePowerCharacter::CalculateInteractRay()
 {
-
 	if (bCanInteract)
 	{
 		//Ustawianie wektora lokacji kamery
@@ -387,7 +412,6 @@ bool AImaginePowerCharacter::CalculateInteractRay()
 			//Sprawdź czy promień dotyka aktora który może interaktować 
 			if (OutHit.bBlockingHit && OutHit.Actor->ActorHasTag(FName("Interactible")))
 			{
-
 				return (true);
 			}
 		}

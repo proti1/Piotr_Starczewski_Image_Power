@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "PlayerInteractionInterface.h" //Dołącz interfejs do interakcji
+#include "Blueprint/UserWidget.h" //Do tworzenia widgetów
 #include "ImaginePowerCharacter.generated.h"
 
 class UInputComponent;
@@ -161,6 +162,13 @@ public:
 	FORCEINLINE class UCameraComponent* GetFirstPersonCameraComponent() const { return FirstPersonCameraComponent; }
 
 
+	//Widget informujący o możliwości interakcji
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Widget")
+	TSubclassOf<class UUserWidget> StatusInteractionWidget;
+
+	//Referencja do widgeta
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Widget")
+	UUserWidget* StatusInteractionWidgetRef;
 
 	//Maksymalna długość interakcji w Unreal Units
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Parameters")
@@ -184,9 +192,6 @@ public:
 
 
 private:
-	//Z tej klasy będą spawnowane miniony
-	//TSubclassOf<class AMinion> MinionClass;
-
 	//Przetrzymóje zespawnowane miniony
 	TArray<AActor*> SpawnedMinions;
 
@@ -204,6 +209,9 @@ private:
 
 	//Referencja do ostatniego zespawnowanego miniona
 	AActor* LastSpawnedActor;
+
+	//Referencja do kontrolera
+	APlayerController* MyController;
 
 	//Czy jest obiekt do interakcji w zasięgu
 	bool bInteractActorInRange;
